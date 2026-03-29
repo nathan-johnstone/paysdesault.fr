@@ -1,0 +1,177 @@
+{
+  "main": {
+    "id": "7f14dd78b39c531c",
+    "type": "split",
+    "children": [
+      {
+        "id": "d0f7b82904f75d64",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "bb53df8409c41038",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Nouvel onglet"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "8f6a2299e49db528",
+    "type": "split",
+    "children": [
+      {
+        "id": "24c483728c7e0d3e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0a0ce251abe550d4",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Explorateur de fichiers"
+            }
+          },
+          {
+            "id": "d9f47db109673e63",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Rechercher"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 294.5
+  },
+  "right": {
+    "id": "858f8b946941cb5c",
+    "type": "split",
+    "children": [
+      {
+        "id": "a2ded026a184bc14",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ce157836d6e182c9",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Cours/UML - Unified Model Language/Ex - Blue Indigo/TP-Projet-UML-Blue_Indigo.pdf",
+                "followCursor": false,
+                "showSearch": true,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Plan de TP-Projet-UML-Blue_Indigo"
+            }
+          },
+          {
+            "id": "5245621e969392b4",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 305.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Ouvrir le sélecteur rapide": false,
+      "canvas:Créer une nouvelle toile": false,
+      "command-palette:Ouvrir la palette de commandes": false,
+      "obsidian-kanban:Create new board": false,
+      "obsidian-git:Open Git source control": false
+    }
+  },
+  "active": "bb53df8409c41038",
+  "lastOpenFiles": [
+    "conflict-files-obsidian-git.md",
+    "README.md",
+    "Sans titre.md",
+    "Cours/UML - Unified Model Language/Cours - Diagramme de séquence.pdf",
+    "MDE/Pitch checklist.docx",
+    "Cours/English/Cours - Pecha Kucha.pdf",
+    "Cours/UML - Unified Model Language/Cours - Diagramme d'activité.pdf",
+    "Cours/GIT BASH/BASH - GIT.md",
+    "Projet personnel - paysdesault.fr/Couleurs.pdf",
+    "Projet personnel - paysdesault.fr/Figma/paysdesault.fr.fig",
+    "Projet personnel - paysdesault.fr/Figma/CDC - paysdesault.fr.deck",
+    "Projet personnel - paysdesault.fr/Figma",
+    "Projet personnel - paysdesault.fr/Nouveau dossier",
+    "Projet personnel - paysdesault.fr/Cahier de charges/réinitialiser le mot de passe - activity.mdj",
+    "Cours/UML - Unified Model Language/UseCase.png",
+    "Cours/CDC - Cahier des charges/Les parties du CDC.md",
+    "Projet personnel - paysdesault.fr/Cahier de charges/Arborescence.png",
+    "Projet personnel - paysdesault.fr/Cahier de charges/Arborescence.canvas",
+    "Projet personnel - paysdesault.fr/Cahier de charges/UseCase - paysdesault - Copie.png",
+    "Projet personnel - paysdesault.fr/Cahier de charges/UseCase - paysdesault.png",
+    "Projet personnel - paysdesault.fr/Cahier de charges/Cahier des charges.md",
+    "Projet personnel - paysdesault.fr/Cahier de charges/Objectifs SMART.canvas",
+    "Projet personnel - paysdesault.fr/Contenu/Histoire du Pays de Sault.md",
+    "Projet personnel - paysdesault.fr/API.md",
+    "Untitled Kanban.md",
+    "Sans titre.canvas",
+    "Hello !.md",
+    "Charte graphique.md",
+    "Outils/Lorum Ipsum.md",
+    "Cours/copie/UML - Unified Model Language/UseCase.png",
+    "Cours/copie/Maquettage/EX - Café Leblanc/Maquette/Produit_Mobile.png",
+    "Cours/copie/Maquettage/EX - Café Leblanc/Maquette/Produit_Desktop.png",
+    "Cours/copie/Maquettage/EX - Café Leblanc/Maquette/Nous_Contacter_Mobile.png",
+    "Cours/copie/Maquettage/EX - Café Leblanc/Maquette/Nous_Contacter_Desktop.png",
+    "Cours/copie/Maquettage/EX - Café Leblanc/Maquette/Accueil_Desktop.png",
+    "Cours/copie/GIT BASH/Conventional Commits.md",
+    "Cours/copie/GIT BASH/BASH - GIT.md",
+    "Cours/copie/Gestion de projet/Objectifs SMART.canvas",
+    "Cours/copie/Gestion de projet/Méthode QQOQCP.canvas",
+    "Cours/copie/Gestion de projet/Méthode PERT.md",
+    "Cours/copie/Gestion de projet/Kanban.md",
+    "Cours/copie/CDC - Cahier des charges/Les parties du CDC.md",
+    "Cours/GIT BASH - Copie/Conventional Commits.md",
+    "Cours/GIT BASH - Copie/BASH - GIT.md",
+    "Cours/Gestion de projet - Copie/Objectifs SMART.canvas",
+    "Cours/Gestion de projet - Copie/Méthode QQOQCP.canvas",
+    "Cours/Gestion de projet - Copie/Méthode PERT.md",
+    "Cours/Gestion de projet - Copie/Kanban.md",
+    "Cours/CDC - Cahier des charges - Copie/Les parties du CDC.md",
+    "Projet personnel - paysdesault.fr/Cahier de charges/Charte des risques.canvas",
+    "Outils/Text syntaxe.md",
+    "Projet personnel - paysdesault.fr/Contenu/SEO.md",
+    "Projet personnel - paysdesault.fr/Cahier de charges/Idée de projet.md",
+    "Projet personnel - paysdesault.fr/Charte graphique.md",
+    "Cours/Gestion de projet 2/Objectifs SMART.canvas",
+    "Cours/Gestion de projet 2/Méthode QQOQCP.canvas"
+  ]
+}

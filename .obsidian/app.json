@@ -1,0 +1,11 @@
+{
+  "showUnsupportedFiles": true,
+  "alwaysUpdateLinks": true,
+  "strictLineBreaks": false,
+  "readableLineLength": true,
+  "foldIndent": false,
+  "foldHeading": false,
+  "showLineNumber": true,
+  "defaultViewMode": "source",
+  "rightToLeft": false
+}

@@ -1,0 +1,18 @@
+{
+  "obsidian-emoji-toolbar:emoji-picker:open-picker": [
+    {
+      "modifiers": [
+        "Meta"
+      ],
+      "key": "."
+    }
+  ],
+  "emoji-magic:insert": [
+    {
+      "modifiers": [
+        "Meta"
+      ],
+      "key": "."
+    }
+  ]
+}
