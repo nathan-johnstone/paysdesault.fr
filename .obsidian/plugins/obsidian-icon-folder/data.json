@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "LiBadgeInfo",
+      "LiOpenVault",
+      "LiFolderRoot",
       "LiListCollapse",
-      "LiBriefcaseBusiness",
-      "LiWorkflow",
-      "LiSwatchBook",
-      "LiBookOpenCheck"
+      "LiBriefcaseBusiness"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -40,7 +40,7 @@
   "Sites utiles": "LiLink",
   "Cours": "LiTextSearch",
   "Sites utiles/Notion Mail.url": "LiMail",
-  "root.lnk": "LiFolderTree",
+  "root.lnk": "LiFolderRoot",
   "Sites utiles/ADRAR - ADEL.url": "LiSchool",
   "Sites utiles/ADRAR - CANEL.url": "LiSchool",
   "Sites utiles/LinkedIn.url": "LiLinkedin",
@@ -52,7 +52,6 @@
   "Projet personnel - paysdesault.fr": "LiCode2",
   "Projet de groupe -": "LiCode2",
   "Projet en entreprise -": "LiCode2",
-  "Projet personnel - paysdesault.fr/- paysdesault.fr.url": "LiLink",
   "Sites utiles/Wordpress demo.url": "LiBlocks",
   "Sites utiles/W3Schools.url": "LiHeading3",
   "Sites utiles/MDN Web Docs.url": "🇲🇿",
@@ -64,5 +63,6 @@
   "Applications": "LiComputer",
   "Outils/Text syntaxe.md": "LiLetterText",
   "Sites utiles/France Num.url": "LiWorkflow",
-  "MDE": "LiBriefcaseBusiness"
+  "MDE": "LiBriefcaseBusiness",
+  "Formation": "LiBadgeInfo"
 }
