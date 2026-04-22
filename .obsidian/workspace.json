@@ -11,10 +11,14 @@
             "id": "f6a91b1c14128184",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "Nouvel onglet"
+              "type": "split-diff-view",
+              "state": {
+                "aFile": ".gitignore",
+                "bFile": ".gitignore",
+                "aRef": ""
+              },
+              "icon": "diff",
+              "title": "Diff: .gitignore  (Working Tree)"
             }
           }
         ]
@@ -115,8 +119,9 @@
       "vscode-editor:Create Code File": false
     }
   },
-  "active": "0a0ce251abe550d4",
+  "active": "f6a91b1c14128184",
   "lastOpenFiles": [
+    "README.md",
     "Projet personnel - paysdesault.fr/Idées.md",
     "Projet personnel - paysdesault.fr/Cahier de charges/Maquette/Mockups/Menions légales - mobile.pdf",
     "Projet personnel - paysdesault.fr/Cahier de charges/Maquette/Mockups/Agenda - mobile.pdf",
