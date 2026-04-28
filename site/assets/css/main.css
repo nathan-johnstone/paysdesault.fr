@@ -1,14 +1,48 @@
 body{
     background: #f2fcf2;
+    margin: auto;
+    max-width: 100vh;
 }
-/* fonts à implimenter, à voir si variable OK ou si besoin d'en faire pour chaque taille de police ?
+
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* POLICES */
+
 @font-face{
     font-family: 'Dosis';
-    src: '../fonts/Dosis-VariableFont_wght.tff' format("truetype");
+    src: url(../fonts/Dosis-VariableFont_wght.ttf) format("truetype");
 }
 
 @font-face{
     font-family: 'Heebo';
-    src: '../fonts/Heebo-VariableFont_wght.tff' format("truetype");
+    src: url(../fonts/Heebo-VariableFont_wght.ttf) format("truetype");
 }
-*/
+
+*{
+    font-family: 'Heebo', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Dosis', sans-serif;
+}
+
+/* HEADER */
+
+header{
+    text-align: center;
+}
+
+header a{
+    display: inline-block;
+    height: 80px;
+    margin: 10px 0;
+}
+
+/* EVENT CARDS */
+
+.eventCard{
+    background: #fff;
+}
