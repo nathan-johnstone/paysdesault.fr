@@ -1,0 +1,14 @@
+body{
+    background: #f2fcf2;
+}
+/* fonts à implimenter, à voir si variable OK ou si besoin d'en faire pour chaque taille de police ?
+@font-face{
+    font-family: 'Dosis';
+    src: '../fonts/Dosis-VariableFont_wght.tff' format("truetype");
+}
+
+@font-face{
+    font-family: 'Heebo';
+    src: '../fonts/Heebo-VariableFont_wght.tff' format("truetype");
+}
+*/
