@@ -1,12 +1,24 @@
 body{
     background: #f2fcf2;
+    padding: 0 10px;
     margin: auto;
     max-width: 100vh;
 }
 
+/* IMAGES */
+
 img{
     max-width: 100%;
     max-height: 100%;
+}
+
+picture > img{
+    width: 100%;
+    object-fit: cover;
+}
+
+picture{
+    display: block;
 }
 
 /* POLICES */
@@ -21,12 +33,47 @@ img{
     src: url(../fonts/Heebo-VariableFont_wght.ttf) format("truetype");
 }
 
-*{
+p, a, span{
     font-family: 'Heebo', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6{
     font-family: 'Dosis', sans-serif;
+}
+
+/* BOUTONS & TAGS */
+
+.btnPrincipal{
+    display: block;
+    width:fit-content;
+    font-family: 'Dosis', sans-serif;
+    background:#374d35;
+    color: #f2fcf2;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+.btnSecondaire{
+    display: block;
+    width:fit-content;
+    border: solid 2px #374d35;
+    font-family: 'Dosis', sans-serif;
+    color:#374d35;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 3px 6px;
+}
+
+.tag{
+    padding: 3px 6px;
+    border-radius: 10px;
+    background: #4d9945;
+    color: #f2fcf2;
+    text-decoration: none;
+    font-size: 0.7em;
 }
 
 /* HEADER */
@@ -43,6 +90,67 @@ header a{
 
 /* EVENT CARDS */
 
+#prochainEvents{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    gap: 20px;
+}
+
 .eventCard{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    align-items: center;
     background: #fff;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #ddd8;
+    gap: 10px;
+}
+
+.eventCard picture, .eventCard .tags, .eventCard > a{
+    grid-column: span 2;
+}
+
+.eventCard img{
+    border-radius: 10px;
+    aspect-ratio: 4/3;
+}
+
+.eventCard .date{
+    display: flex;
+    flex-flow: column;
+    background: #374d35;
+    padding: 2px;
+    border-radius: 10px;
+    height: 46px;
+}
+
+.eventCard .date p{
+    font-family: 'Dosis', sans-serif;
+    margin: auto;
+    color: #f2fcf2;
+}
+
+.eventCard .date p:first-child{
+    font-size: 1.35em;
+    font-weight: bold;
+}
+
+.eventCard .date p:last-child{
+    font-size: 0.8em;
+}
+
+.eventCard h3{
+    margin: 0;
+}
+
+.eventCard .btnSecondaire{
+    justify-self: right;
+}
+
+@media (max-width:500px) {
+    #prochainEvents{
+        grid-template-columns: 1fr;
+    }
 }
