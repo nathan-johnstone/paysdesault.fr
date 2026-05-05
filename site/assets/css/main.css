@@ -33,7 +33,7 @@ picture{
     src: url(../fonts/Heebo-VariableFont_wght.ttf) format("truetype");
 }
 
-p, a, span{
+html{
     font-family: 'Heebo', sans-serif;
 }
 
