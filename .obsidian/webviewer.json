@@ -1,5 +1,6 @@
 {
   "openExternalURLs": true,
   "enableAdblocking": true,
-  "searchEngine": "google"
+  "searchEngine": "google",
+  "customSearchEngine": "https://developer.mozilla.org/fr/search?q=%s"
 }

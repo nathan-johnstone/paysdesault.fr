@@ -1,9 +1,12 @@
 [
   "obsidian-icon-folder",
-  "emoji-magic",
   "obsidian-kanban",
   "OA-file-hider",
   "obsidian-git",
   "obsidian-emoji-toolbar",
-  "vscode-editor"
+  "vscode-editor",
+  "code-styler",
+  "webviewer-bookmarks",
+  "ribbon-divider",
+  "open-vscode"
 ]

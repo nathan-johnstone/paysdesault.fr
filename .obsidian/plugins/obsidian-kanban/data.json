@@ -1,0 +1,12 @@
+{
+  "date-format": "DD-MM-YYYY",
+  "date-display-format": "DD-MM-YYYY",
+  "show-relative-date": true,
+  "move-dates": true,
+  "move-tags": true,
+  "show-checkboxes": true,
+  "archive-date-format": "HH:mm DD-MM-YYYY",
+  "date-picker-week-start": 1,
+  "inline-metadata-position": "footer",
+  "move-task-metadata": true
+}

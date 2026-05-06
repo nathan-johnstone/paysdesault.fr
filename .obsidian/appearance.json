@@ -3,6 +3,9 @@
   "accentColor": "#e74844",
   "cssTheme": "Minimal",
   "enabledCssSnippets": [
+    "theme",
     "custom"
-  ]
+  ],
+  "showRibbon": true,
+  "showViewHeader": true
 }

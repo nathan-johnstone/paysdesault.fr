@@ -7,5 +7,6 @@
   "foldHeading": false,
   "showLineNumber": true,
   "defaultViewMode": "source",
-  "rightToLeft": false
+  "rightToLeft": false,
+  "showInlineTitle": true
 }
