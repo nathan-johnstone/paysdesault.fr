@@ -1,0 +1,284 @@
+/* COULEURS */
+
+$vertClair: #74E66E;
+$vert: #4D9945;
+$vertFonce: #374D35;
+$blanc: #F2FCF2;
+$noir: #001A00;
+
+/* REBOOT CSS */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body{
+    background: $blanc;
+    padding: 0 10px;
+    margin: 0 auto;
+    max-width: 100vh;
+}
+
+:focus{
+    outline-offset: 2px;
+    outline: 2px solid $noir;
+}
+
+/* POLICES ET ICONS */
+
+$titre: 'Dosis', sans-serif;
+$texte: 'Heebo', sans-serif;
+
+@font-face{
+    font-family: 'Dosis';
+    src: url(../fonts/Dosis-VariableFont_wght.ttf) format("truetype");
+}
+
+@font-face{
+    font-family: 'Heebo';
+    src: url(../fonts/Heebo-VariableFont_wght.ttf) format("truetype");
+}
+
+html{
+    font-family: $texte;
+    font-size: 16px;
+    line-height: 1.5;
+    color: $noir;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: $titre;
+    margin: 10px 0;
+}
+
+p{
+    margin: 10px 0;
+}
+
+@font-face {
+    font-family: 'Material Symbols';
+    font-style: normal;
+    src: url(../fonts/MaterialSymbolsRounded-VariableFont_FILL\,GRAD\,opsz\,wght.ttf) format('truetype');
+}
+
+.ms {
+    font-family: 'Material Symbols';
+    font-weight: normal;
+    font-style: normal;
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    &-20{
+        @extend .ms;
+        font-size: 20px;
+    }
+    &-24{
+        @extend .ms;
+        font-size: 24px;
+    }
+    &-40{
+        @extend .ms;
+        font-size: 40px;
+    }
+    &-48{
+        @extend .ms;
+        font-size: 48px;
+    }
+    &-fill{
+            font-variation-settings: 'FILL' 1;
+    }
+}
+
+:hover > .ms-fill-hover, :focus > .ms-fill-hover{
+    font-variation-settings: 'FILL' 1;
+}
+
+/* IMAGES */
+
+img{
+    max-width: 100%;
+    max-height: 100%;
+    &.cover{
+        width: 100%;
+        corner-shape: squircle;
+        border-radius: 30px;
+        margin: 10px auto;
+    }
+}
+
+picture{
+    display: block;
+    img{
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+/* BOUTONS & TAGS */
+
+@mixin btn{
+    display: inline-flex;
+    align-items: center;
+    padding: 5px 10px;
+    text-decoration: none;
+    width: fit-content;
+    font-family: $titre;
+    font-weight: bold;
+    border-radius: 30px;
+    corner-shape: superellipse(1.6);
+    transition: all 0.2s ease;
+}
+
+.btnPrincipal{
+    @include btn;
+    background: $vertFonce;
+    color: $blanc;
+    border: solid 2px $vertFonce;
+    &:hover, &:focus{
+        background: $blanc;
+        color: $vertFonce;
+    }
+}
+
+.btnSecondaire{
+    @include btn;
+    background: $blanc;
+    color:$vertFonce;
+    border: solid 2px $vertFonce;
+    &:hover, &:focus{
+        background: $vertFonce;
+        color: $blanc;
+    }
+}
+
+.tag{
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px 10px;
+    text-decoration: none;
+    line-height: 1;
+    border-radius: 999px;
+    background: $vert;
+    color: $blanc;
+    font-size: 0.8em;
+    transition: all 0.2s ease;
+    &:hover, &:focus{
+        opacity: 0.8;
+    }
+}
+
+/* HEADER */
+
+header{
+    text-align: center;
+    a{
+        display: inline-block;
+        height: 80px;
+        margin: 10px 0;
+    }
+}
+
+/* CONTENU PRINCIPAL */
+
+main{
+    padding-bottom: 20px;
+    h1{
+        text-align: center;
+    }
+    .btnPrincipal{
+        display: flex;
+        justify-self: center;
+    }
+}
+
+/* EVENT CARDS */
+
+#prochainsEvents{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    gap: 20px;
+    h2, #eventFooter{
+        grid-column: 1 / -1;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 100vh) {
+    #prochainsEvents{
+        grid-template-columns: 1fr;
+    }
+}
+
+.eventCard{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    align-items: center;
+    background: #fff;
+    padding: 10px;
+    corner-shape: squircle;
+    border-radius: 30px;
+    box-shadow: 0 0 10px #8884;
+    gap: 10px;
+    picture, .tags, > a{
+        grid-column: 1 / -1;
+    }
+    .tags{
+        display: flex;
+        gap: 5px;
+        align-items: center;
+    }
+    img{
+        corner-shape: squircle;
+        border-radius: 20px;
+        aspect-ratio: 4/3;
+    }
+    .date{
+        display: flex;
+        flex-flow: column;
+        background: $vertFonce;
+        padding: 2px;
+        border-radius: 10px;
+        height: 50px;
+        aspect-ratio: 1/1;
+        overflow: hidden;
+        p{
+            font-family: $titre;
+            line-height: 1;
+            margin: auto;
+            color: $blanc;
+            &:first-child{
+                font-size: 1.5em;
+                font-weight: bold;
+            }
+            &:last-child{
+                font-size: 0.8em;
+            }
+        }
+    }
+    h3{
+        margin: 0;
+    }
+    .btnSecondaire{
+        justify-self: right;
+    }
+}
+
+@media (max-width:500px) {
+    #prochainEvents{
+        grid-template-columns: 1fr;
+    }
+}
+
+/* FOOTER */
+
+footer{
+    height: 200px;
+}

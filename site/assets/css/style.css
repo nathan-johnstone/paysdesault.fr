@@ -1,0 +1,265 @@
+/* COULEURS */
+/* REBOOT CSS */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background: #F2FCF2;
+  padding: 0 10px;
+  margin: 0 auto;
+  max-width: 100vh;
+}
+
+:focus {
+  outline-offset: 2px;
+  outline: 2px solid #001A00;
+}
+
+/* POLICES ET ICONS */
+@font-face {
+  font-family: "Dosis";
+  src: url(../fonts/Dosis-VariableFont_wght.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Heebo";
+  src: url(../fonts/Heebo-VariableFont_wght.ttf) format("truetype");
+}
+html {
+  font-family: "Heebo", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #001A00;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Dosis", sans-serif;
+  margin: 10px 0;
+}
+
+p {
+  margin: 10px 0;
+}
+
+@font-face {
+  font-family: "Material Symbols";
+  font-style: normal;
+  src: url(../fonts/MaterialSymbolsRounded-VariableFont_FILL\,GRAD\,opsz\,wght.ttf) format("truetype");
+}
+.ms, .ms-48, .ms-40, .ms-24, .ms-20 {
+  font-family: "Material Symbols";
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+}
+.ms-20 {
+  font-size: 20px;
+}
+.ms-24 {
+  font-size: 24px;
+}
+.ms-40 {
+  font-size: 40px;
+}
+.ms-48 {
+  font-size: 48px;
+}
+.ms-fill {
+  font-variation-settings: "FILL" 1;
+}
+
+:hover > .ms-fill-hover, :focus > .ms-fill-hover {
+  font-variation-settings: "FILL" 1;
+}
+
+/* IMAGES */
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+img.cover {
+  width: 100%;
+  corner-shape: squircle;
+  border-radius: 30px;
+  margin: 10px auto;
+}
+
+picture {
+  display: block;
+}
+picture img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/* BOUTONS & TAGS */
+.btnPrincipal {
+  display: inline-flex;
+  align-items: center;
+  padding: 5px 10px;
+  text-decoration: none;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-family: "Dosis", sans-serif;
+  font-weight: bold;
+  border-radius: 30px;
+  corner-shape: superellipse(1.6);
+  transition: all 0.2s ease;
+  background: #374D35;
+  color: #F2FCF2;
+  border: solid 2px #374D35;
+}
+.btnPrincipal:hover, .btnPrincipal:focus {
+  background: #F2FCF2;
+  color: #374D35;
+}
+
+.btnSecondaire {
+  display: inline-flex;
+  align-items: center;
+  padding: 5px 10px;
+  text-decoration: none;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-family: "Dosis", sans-serif;
+  font-weight: bold;
+  border-radius: 30px;
+  corner-shape: superellipse(1.6);
+  transition: all 0.2s ease;
+  background: #F2FCF2;
+  color: #374D35;
+  border: solid 2px #374D35;
+}
+.btnSecondaire:hover, .btnSecondaire:focus {
+  background: #374D35;
+  color: #F2FCF2;
+}
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 10px;
+  text-decoration: none;
+  line-height: 1;
+  border-radius: 999px;
+  background: #4D9945;
+  color: #F2FCF2;
+  font-size: 0.8em;
+  transition: all 0.2s ease;
+}
+.tag:hover, .tag:focus {
+  opacity: 0.8;
+}
+
+/* HEADER */
+header {
+  text-align: center;
+}
+header a {
+  display: inline-block;
+  height: 80px;
+  margin: 10px 0;
+}
+
+/* CONTENU PRINCIPAL */
+main {
+  padding-bottom: 20px;
+}
+main h1 {
+  text-align: center;
+}
+main .btnPrincipal {
+  display: flex;
+  justify-self: center;
+}
+
+/* EVENT CARDS */
+#prochainsEvents {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  gap: 20px;
+}
+#prochainsEvents h2, #prochainsEvents #eventFooter {
+  grid-column: 1/-1;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 100vh) {
+  #prochainsEvents {
+    grid-template-columns: 1fr;
+  }
+}
+.eventCard {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  align-items: center;
+  background: #fff;
+  padding: 10px;
+  corner-shape: squircle;
+  border-radius: 30px;
+  box-shadow: 0 0 10px rgba(136, 136, 136, 0.2666666667);
+  gap: 10px;
+}
+.eventCard picture, .eventCard .tags, .eventCard > a {
+  grid-column: 1/-1;
+}
+.eventCard .tags {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.eventCard img {
+  corner-shape: squircle;
+  border-radius: 20px;
+  aspect-ratio: 4/3;
+}
+.eventCard .date {
+  display: flex;
+  flex-flow: column;
+  background: #374D35;
+  padding: 2px;
+  border-radius: 10px;
+  height: 50px;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+}
+.eventCard .date p {
+  font-family: "Dosis", sans-serif;
+  line-height: 1;
+  margin: auto;
+  color: #F2FCF2;
+}
+.eventCard .date p:first-child {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.eventCard .date p:last-child {
+  font-size: 0.8em;
+}
+.eventCard h3 {
+  margin: 0;
+}
+.eventCard .btnSecondaire {
+  justify-self: right;
+}
+
+@media (max-width: 500px) {
+  #prochainEvents {
+    grid-template-columns: 1fr;
+  }
+}
+/* FOOTER */
+footer {
+  height: 200px;
+}/*# sourceMappingURL=style.css.map */
