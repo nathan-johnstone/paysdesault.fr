@@ -43,6 +43,15 @@ p {
   margin: 10px 0;
 }
 
+p a {
+  text-decoration: none;
+  color: #4D9945;
+  transition: all 0.2s ease;
+}
+p a:hover, p a:focus {
+  color: #74E66E;
+}
+
 @font-face {
   font-family: "Material Symbols";
   font-style: normal;
@@ -167,15 +176,10 @@ header {
   text-align: center;
 }
 header img {
-  height: 60px;
+  height: 80px;
 }
-
-/* MENU NAV */
-nav {
-  margin: 20px 0;
-}
-nav menu {
-  margin: 0;
+header menu {
+  margin: 20px 0 0 0;
   padding: 0;
   list-style: none;
   display: flex;
@@ -183,10 +187,10 @@ nav menu {
   justify-content: space-around;
   gap: 10px;
 }
-nav menu li {
+header menu li {
   flex: 1;
 }
-nav menu li a {
+header menu li a {
   display: block;
   corner-shape: squircle;
   border-radius: 30px;
@@ -199,14 +203,31 @@ nav menu li a {
   box-shadow: 0 0 10px rgba(55, 77, 53, 0.2);
   transition: all 0.2s ease;
 }
-nav menu li a p {
+header menu li a p {
   font-family: "Dosis", sans-serif;
   font-weight: bold;
   margin: 0;
 }
-nav menu li a:hover, nav menu li a:focus {
+header menu li a:hover, header menu li a:focus {
   background: #4D9945;
   color: #F2FCF2;
+}
+
+nav[aria-label="fil d'ariane"] {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+nav[aria-label="fil d'ariane"] a {
+  color: #4D9945;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+nav[aria-label="fil d'ariane"] a:hover {
+  color: #374D35;
+}
+nav[aria-label="fil d'ariane"] p {
+  margin: 0;
 }
 
 /* CONTENU PRINCIPAL */

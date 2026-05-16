@@ -58,6 +58,15 @@ p{
     margin: 10px 0;
 }
 
+p a{
+    text-decoration: none;
+    color:$vert;
+    transition: all 0.2s ease;
+    &:hover, &:focus{
+        color:$vertClair;
+    }
+}
+
 @font-face {
     font-family: 'Material Symbols';
     font-style: normal;
@@ -188,16 +197,10 @@ header{
     margin: 20px auto;
     text-align: center;
     img{
-        height: 60px;
+        height: 80px;
     }
-}
-
-/* MENU NAV */
-
-nav{
-    margin: 20px 0;
     menu{
-        margin: 0;
+        margin: 20px 0 0 0;
         padding: 0;
         list-style: none;
         display: flex;
@@ -229,6 +232,23 @@ nav{
                 }
             }
         }
+    }
+}
+
+nav[aria-label="fil d'ariane"]{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    a{
+        color: $vert;
+        text-decoration: none;
+        transition: all 0.2s ease;
+        &:hover{
+            color: $vertFonce
+        }
+    }
+    p{
+        margin: 0;
     }
 }
 
