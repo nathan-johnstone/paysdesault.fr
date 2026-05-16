@@ -102,11 +102,14 @@ picture img {
 }
 
 /* BOUTONS & TAGS */
-.btnPrincipal {
+.btn, .btnSecondaire, .btnPrincipal {
   display: inline-flex;
+  gap: 3px;
   align-items: center;
   padding: 5px 10px;
   text-decoration: none;
+  height: -moz-fit-content;
+  height: fit-content;
   width: -moz-fit-content;
   width: fit-content;
   font-family: "Dosis", sans-serif;
@@ -114,6 +117,13 @@ picture img {
   border-radius: 30px;
   corner-shape: superellipse(1.6);
   transition: all 0.2s ease;
+  color: #4D9945;
+}
+.btn:hover, .btnSecondaire:hover, .btnPrincipal:hover, .btn:focus, .btnSecondaire:focus, .btnPrincipal:focus {
+  color: #374D35;
+}
+
+.btnPrincipal {
   background: #374D35;
   color: #F2FCF2;
   border: solid 2px #374D35;
@@ -124,17 +134,6 @@ picture img {
 }
 
 .btnSecondaire {
-  display: inline-flex;
-  align-items: center;
-  padding: 5px 10px;
-  text-decoration: none;
-  width: -moz-fit-content;
-  width: fit-content;
-  font-family: "Dosis", sans-serif;
-  font-weight: bold;
-  border-radius: 30px;
-  corner-shape: superellipse(1.6);
-  transition: all 0.2s ease;
   background: #F2FCF2;
   color: #374D35;
   border: solid 2px #374D35;
@@ -163,12 +162,11 @@ picture img {
 
 /* HEADER */
 header {
+  margin: 20px auto;
   text-align: center;
 }
-header a {
-  display: inline-block;
-  height: 80px;
-  margin: 10px 0;
+header img {
+  height: 60px;
 }
 
 /* MENU NAV */
@@ -189,25 +187,27 @@ nav menu {
 }
 nav menu li {
   flex: 1;
-  corner-shape: squircle;
-  border-radius: 30px;
-  background: #F2FCF2;
 }
 nav menu li a {
   display: block;
+  corner-shape: squircle;
+  border-radius: 30px;
   padding: 10px;
+  background: #F2FCF2;
+  text-decoration: none;
   text-align: center;
   color: #4D9945;
-  text-decoration: none;
   line-height: 1;
+  transition: all 0.2s ease;
 }
 nav menu li a p {
   font-family: "Dosis", sans-serif;
   font-weight: bold;
   margin: 0;
 }
-nav menu li a:hover {
-  color: #4D9945;
+nav menu li a:hover, nav menu li a:focus {
+  background: #4D9945;
+  color: #F2FCF2;
 }
 
 /* CONTENU PRINCIPAL */
@@ -229,7 +229,7 @@ main .btnPrincipal {
   justify-content: center;
   gap: 20px;
 }
-#prochainsEvents h2, #prochainsEvents #eventFooter {
+#prochainsEvents h2, #prochainsEvents > a {
   grid-column: 1/-1;
   margin: 0 auto;
 }
