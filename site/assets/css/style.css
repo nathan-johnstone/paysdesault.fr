@@ -90,6 +90,7 @@ img.cover {
   corner-shape: squircle;
   border-radius: 30px;
   margin: 10px auto;
+  box-shadow: 0 0 10px rgba(55, 77, 53, 0.2);
 }
 
 picture {
@@ -171,10 +172,7 @@ header img {
 
 /* MENU NAV */
 nav {
-  background: #fff;
-  corner-shape: squircle;
-  border-radius: 30px;
-  padding: 10px;
+  margin: 20px 0;
 }
 nav menu {
   margin: 0;
@@ -198,6 +196,7 @@ nav menu li a {
   text-align: center;
   color: #4D9945;
   line-height: 1;
+  box-shadow: 0 0 10px rgba(55, 77, 53, 0.2);
   transition: all 0.2s ease;
 }
 nav menu li a p {
@@ -247,7 +246,7 @@ main .btnPrincipal {
   padding: 10px;
   corner-shape: squircle;
   border-radius: 30px;
-  box-shadow: 0 0 10px rgba(136, 136, 136, 0.2666666667);
+  box-shadow: 0 0 10px rgba(55, 77, 53, 0.2);
   gap: 10px;
 }
 .eventCard picture, .eventCard .tags, .eventCard > a {
@@ -303,6 +302,7 @@ footer {
   align-items: center;
   corner-shape: squircle;
   border-radius: 30px;
+  box-shadow: 0 0 10px rgba(55, 77, 53, 0.2);
 }
 footer menu {
   flex: 1 50%;
