@@ -171,6 +171,45 @@ header a {
   margin: 10px 0;
 }
 
+/* MENU NAV */
+nav {
+  background: #fff;
+  corner-shape: squircle;
+  border-radius: 30px;
+  padding: 10px;
+}
+nav menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  gap: 10px;
+}
+nav menu li {
+  flex: 1;
+  corner-shape: squircle;
+  border-radius: 30px;
+  background: #F2FCF2;
+}
+nav menu li a {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  color: #4D9945;
+  text-decoration: none;
+  line-height: 1;
+}
+nav menu li a p {
+  font-family: "Dosis", sans-serif;
+  font-weight: bold;
+  margin: 0;
+}
+nav menu li a:hover {
+  color: #4D9945;
+}
+
 /* CONTENU PRINCIPAL */
 main {
   padding-bottom: 20px;
@@ -254,12 +293,61 @@ main .btnPrincipal {
   justify-self: right;
 }
 
-@media (max-width: 500px) {
-  #prochainEvents {
-    grid-template-columns: 1fr;
-  }
-}
 /* FOOTER */
 footer {
-  height: 200px;
+  margin: 20px 0;
+  padding: 20px;
+  display: flex;
+  flex-flow: row wrap;
+  background: #374D35;
+  align-items: center;
+  corner-shape: squircle;
+  border-radius: 30px;
+}
+footer menu {
+  flex: 1 50%;
+  list-style: none;
+  margin: 0;
+  padding: 20px;
+}
+footer menu a {
+  text-decoration: none;
+  color: #F2FCF2;
+  line-height: 2;
+  transition: all 0.2s ease;
+}
+footer menu a:hover, footer menu a:focus {
+  color: #74E66E;
+}
+footer div {
+  flex: 1 50%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+footer div a, footer div img {
+  height: 30px;
+  transition: all 0.2s ease;
+}
+footer div a :hover, footer div img :hover {
+  transform: scale(1.1);
+}
+footer p {
+  flex: 1 100%;
+  text-align: center;
+  color: #F2FCF2;
+  font-size: 0.8em;
+}
+
+@media screen and (max-width: 100vh) {
+  footer {
+    flex-flow: column nowrap;
+    gap: 20px;
+  }
+  footer menu {
+    text-align: center;
+  }
+  footer menu, footer nav, footer div {
+    flex: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */

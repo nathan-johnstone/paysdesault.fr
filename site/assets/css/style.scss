@@ -185,6 +185,46 @@ header{
     }
 }
 
+/* MENU NAV */
+
+nav{
+    background: #fff;
+    corner-shape: squircle;
+    border-radius: 30px;
+    padding: 10px;
+    menu{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        gap: 10px;
+        li{
+            flex: 1;
+            corner-shape: squircle;
+            border-radius: 30px;
+            background: $blanc;
+            a{
+                display: block;
+                padding: 10px;
+                text-align: center;
+                color: $vert;
+                text-decoration: none;
+                line-height: 1;
+                p{
+                    font-family: $titre;
+                    font-weight: bold;
+                    margin: 0;
+                }
+                &:hover{
+                    color: $vert;
+                }
+            }
+        }
+    }
+}
+
 /* CONTENU PRINCIPAL */
 
 main{
@@ -271,14 +311,62 @@ main{
     }
 }
 
-@media (max-width:500px) {
-    #prochainEvents{
-        grid-template-columns: 1fr;
-    }
-}
-
 /* FOOTER */
 
 footer{
-    height: 200px;
+    margin: 20px 0;
+    padding: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    background: $vertFonce;
+    align-items: center;
+    corner-shape: squircle;
+    border-radius: 30px;
+    menu{
+        flex: 1 50%;
+        list-style: none;
+        margin: 0;
+        padding: 20px;
+        a{
+            text-decoration: none;
+            color:$blanc;
+            line-height: 2;
+            transition: all 0.2s ease;
+            &:hover, &:focus{
+                color:$vertClair;
+            }
+        }
+    }
+    div{
+        flex: 1 50%;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        a, img{
+            height: 30px;
+            transition: all 0.2s ease;
+            :hover{
+                transform: scale(1.1)
+            }
+        }
+    }
+    p{
+        flex: 1 100%;
+        text-align: center;
+        color:$blanc;
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width: 100vh) {
+    footer{
+        flex-flow: column nowrap;
+        gap: 20px;
+        menu{
+            text-align: center;
+        }
+        menu, nav, div{
+            flex: 100%;
+        }
+    }
 }
