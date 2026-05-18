@@ -84,6 +84,7 @@ p a{
     word-wrap: normal;
     white-space: nowrap;
     direction: ltr;
+    vertical-align: sub;
     &-20{
         @extend .ms;
         font-size: 20px;
