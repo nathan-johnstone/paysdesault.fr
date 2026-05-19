@@ -236,20 +236,31 @@ header{
     }
 }
 
-nav[aria-label="fil d'ariane"]{
+/* FIL D'ARIANE */
+
+nav[aria-label="breadcrumb"] ul{
     display: flex;
     flex-flow: row wrap;
-    align-items: center;
-    a{
-        color: $vert;
-        text-decoration: none;
-        transition: all 0.2s ease;
-        &:hover{
-            color: $vertFonce
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li{
+        a{
+            color: $vert;
+            text-decoration: none;
+            transition: all 0.2s ease;
+            &:hover{
+                color: $vertFonce
+            }
         }
-    }
-    p{
-        margin: 0;
+        a[aria-current="page"]{
+                color: $noir;
+            }
+        &:not(:last-child):after{
+            @extend .ms-20;
+            // font-size: 20px;
+            content: 'chevron_right'
+        }
     }
 }
 
