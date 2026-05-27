@@ -11,9 +11,11 @@
     "js",
     "json",
     "lua",
+    "map",
     "php",
     "py",
     "rs",
+    "scss",
     "ts",
     "txt"
   ],
