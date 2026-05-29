@@ -57,7 +57,7 @@ p a:hover, p a:focus {
   font-style: normal;
   src: url(../fonts/MaterialSymbolsRounded-VariableFont_FILL\,GRAD\,opsz\,wght.ttf) format("truetype");
 }
-.ms, .ms-48, .ms-40, .ms-24, .ms-20, nav[aria-label=breadcrumb] ul li:not(:last-child):after {
+.ms, .ms-48, .ms-40, .ms-24, .ms-20 {
   font-family: "Material Symbols";
   font-weight: normal;
   font-style: normal;
@@ -68,9 +68,8 @@ p a:hover, p a:focus {
   word-wrap: normal;
   white-space: nowrap;
   direction: ltr;
-  vertical-align: sub;
 }
-.ms-20, nav[aria-label=breadcrumb] ul li:not(:last-child):after {
+.ms-20 {
   font-size: 20px;
 }
 .ms-24 {
@@ -214,27 +213,21 @@ header menu li a:hover, header menu li a:focus {
   color: #F2FCF2;
 }
 
-/* FIL D'ARIANE */
-nav[aria-label=breadcrumb] ul {
+nav[aria-label="fil d'ariane"] {
   display: flex;
   flex-flow: row wrap;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  align-items: center;
 }
-nav[aria-label=breadcrumb] ul li a {
+nav[aria-label="fil d'ariane"] a {
   color: #4D9945;
   text-decoration: none;
   transition: all 0.2s ease;
 }
-nav[aria-label=breadcrumb] ul li a:hover {
+nav[aria-label="fil d'ariane"] a:hover {
   color: #374D35;
 }
-nav[aria-label=breadcrumb] ul li a[aria-current=page] {
-  color: #001A00;
-}
-nav[aria-label=breadcrumb] ul li:not(:last-child):after {
-  content: "chevron_right";
+nav[aria-label="fil d'ariane"] p {
+  margin: 0;
 }
 
 /* CONTENU PRINCIPAL */
