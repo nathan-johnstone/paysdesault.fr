@@ -5,7 +5,8 @@ $vert: #4D9945;
 $vertFonce: #374D35;
 $blanc: #F2FCF2;
 $noir: #001A00;
-$ombre: 0 0 10px #374D3533;
+
+$shadow: 0 0 10px #374D3533;
 
 /* REBOOT CSS */
 
@@ -119,7 +120,7 @@ img{
         corner-shape: squircle;
         border-radius: 30px;
         margin: 10px auto;
-        box-shadow: $ombre;
+        box-shadow: $shadow;
     }
 }
 
@@ -219,7 +220,7 @@ header{
                 text-align: center;
                 color: $vert;
                 line-height: 1;
-                box-shadow: $ombre;
+                box-shadow: $shadow;
                 transition: all 0.2s ease;
                 p{
                     font-family: $titre;
@@ -292,7 +293,7 @@ main{
     padding: 10px;
     corner-shape: squircle;
     border-radius: 30px;
-    box-shadow: $ombre;
+    box-shadow: $shadow;
     gap: 10px;
     picture, .tags, > a{
         grid-column: 1 / -1;
@@ -349,7 +350,7 @@ footer{
     align-items: center;
     corner-shape: squircle;
     border-radius: 30px;
-    box-shadow: $ombre;
+    box-shadow: $shadow;
     menu{
         flex: 1 50%;
         list-style: none;
