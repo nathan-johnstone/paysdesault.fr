@@ -1,4 +1,4 @@
-@use 'variables' as var;
+@use 'variables' as *;
 
 $titre: 'Dosis', sans-serif;
 $texte: 'Heebo', sans-serif;
@@ -17,7 +17,7 @@ html{
     font-family: $texte;
     font-size: 16px;
     line-height: 1.5;
-    color: var.$noir;
+    color: $noir;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -31,10 +31,10 @@ p{
 
 p a{
     text-decoration: none;
-    color: var.$vert;
+    color: $vert;
     transition: all 0.2s ease;
     &:hover, &:focus{
-        color: var.$vertClair;
+        color: $vertClair;
     }
 }
 

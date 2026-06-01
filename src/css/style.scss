@@ -1,6 +1,8 @@
-@use 'variables' as var;
-@use 'typo';
+@use 'variables' as *;
+@use 'typo' as *;
+@use 'header';
 @use 'ariane';
+@use 'footer';
 
 /* REBOOT CSS */
 
@@ -11,7 +13,7 @@
 }
 
 body{
-    background: var.$blanc;
+    background: $blanc;
     padding: 0 10px;
     margin: 0 auto;
     max-width: 100vh;
@@ -19,7 +21,7 @@ body{
 
 :focus{
     outline-offset: 2px;
-    outline: 2px solid var.$noir;
+    outline: 2px solid $noir;
 }
 
 /* IMAGES */
@@ -33,7 +35,7 @@ img{
         corner-shape: squircle;
         border-radius: 30px;
         margin: 10px auto;
-        box-shadow: var.$ombre;
+        box-shadow: $ombre;
     }
 }
 
@@ -55,36 +57,36 @@ picture{
     text-decoration: none;
     height: fit-content;
     width: fit-content;
-    font-family: typo.$titre;
+    font-family: $titre;
     font-weight: bold;
     border-radius: 30px;
     corner-shape: superellipse(1.6);
     transition: all 0.2s ease;
-    color: var.$vert;
+    color: $vert;
     &:hover, &:focus{
-        color: var.$vertFonce;
+        color: $vertFonce;
     }
 }
 
 .btnPrincipal{
     @extend .btn;
-    background: var.$vertFonce;
-    color: var.$blanc;
-    border: solid 2px var.$vertFonce;
+    background: $vertFonce;
+    color: $blanc;
+    border: solid 2px $vertFonce;
     &:hover, &:focus{
-        background: var.$blanc;
-        color: var.$vertFonce;
+        background: $blanc;
+        color: $vertFonce;
     }
 }
 
 .btnSecondaire{
     @extend .btn;
-    background: var.$blanc;
-    color: var.$vertFonce;
-    border: solid 2px var.$vertFonce;
+    background: $blanc;
+    color: $vertFonce;
+    border: solid 2px $vertFonce;
     &:hover, &:focus{
-        background: var.$vertFonce;
-        color: var.$blanc;
+        background: $vertFonce;
+        color: $blanc;
     }
 }
 
@@ -96,56 +98,12 @@ picture{
     text-decoration: none;
     line-height: 1;
     border-radius: 999px;
-    background: var.$vert;
-    color: var.$blanc;
+    background: $vert;
+    color: $blanc;
     font-size: 0.8em;
     transition: all 0.2s ease;
     &:hover, &:focus{
         opacity: 0.8;
-    }
-}
-
-/* HEADER */
-
-header{
-    margin: 20px auto;
-    text-align: center;
-    img{
-        height: 80px;
-    }
-    menu{
-        margin: 20px 0 0 0;
-        padding: 0;
-        list-style: none;
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-around;
-        gap: 10px;
-        li{
-            flex: 1;
-            a{
-                display: block;
-                corner-shape: squircle;
-                border-radius: 30px;
-                padding: 10px;
-                background: var.$blanc;
-                text-decoration: none;
-                text-align: center;
-                color: var.$vert;
-                line-height: 1;
-                box-shadow: var.$ombre;
-                transition: all 0.2s ease;
-                p{
-                    font-family: typo.$titre;
-                    font-weight: bold;
-                    margin: 0;
-                }
-                &:hover, &:focus{
-                    background: var.$vert;
-                    color: var.$blanc;
-                }
-            }
-        }
     }
 }
 
@@ -189,7 +147,7 @@ main{
     padding: 10px;
     corner-shape: squircle;
     border-radius: 30px;
-    box-shadow: var.$ombre;
+    box-shadow: $ombre;
     gap: 10px;
     picture, .tags, > a{
         grid-column: 1 / -1;
@@ -207,17 +165,17 @@ main{
     .date{
         display: flex;
         flex-flow: column;
-        background: var.$vertFonce;
+        background: $vertFonce;
         padding: 2px;
         border-radius: 10px;
         height: 50px;
         aspect-ratio: 1/1;
         overflow: hidden;
         p{
-            font-family: typo.$titre;
+            font-family: $titre;
             line-height: 1;
             margin: auto;
-            color: var.$blanc;
+            color: $blanc;
             &:first-child{
                 font-size: 1.5em;
                 font-weight: bold;
@@ -232,66 +190,5 @@ main{
     }
     .btnSecondaire{
         justify-self: right;
-    }
-}
-
-/* FOOTER */
-
-footer{
-    margin: 20px 0;
-    padding: 20px;
-    display: flex;
-    flex-flow: row wrap;
-    background: var.$vertFonce;
-    align-items: center;
-    corner-shape: squircle;
-    border-radius: 30px;
-    box-shadow: var.$ombre;
-    menu{
-        flex: 1 50%;
-        list-style: none;
-        margin: 0;
-        padding: 20px;
-        a{
-            text-decoration: none;
-            color: var.$blanc;
-            line-height: 2;
-            transition: all 0.2s ease;
-            &:hover, &:focus{
-                color: var.$vertClair;
-            }
-        }
-    }
-    div{
-        flex: 1 50%;
-        display: flex;
-        justify-content: center;
-        gap: 20px;
-        a, img{
-            height: 30px;
-            transition: all 0.2s ease;
-            :hover{
-                transform: scale(1.1)
-            }
-        }
-    }
-    p{
-        flex: 1 100%;
-        text-align: center;
-        color: var.$blanc;
-        font-size: 0.8em;
-    }
-}
-
-@media screen and (max-width: 100vh) {
-    footer{
-        flex-flow: column nowrap;
-        gap: 20px;
-        menu{
-            text-align: center;
-        }
-        menu, nav, div{
-            flex: 100%;
-        }
     }
 }

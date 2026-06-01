@@ -1,0 +1,44 @@
+@use 'variables' as *;
+@use 'typo' as *;
+
+header{
+    margin: 20px auto;
+    text-align: center;
+    img{
+        height: 80px;
+    }
+    menu{
+        margin: 20px 0 0 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        gap: 10px;
+        li{
+            flex: 1;
+            a{
+                display: block;
+                corner-shape: squircle;
+                border-radius: 30px;
+                padding: 10px;
+                background: $blanc;
+                text-decoration: none;
+                text-align: center;
+                color: $vert;
+                line-height: 1;
+                box-shadow: $ombre;
+                transition: all 0.2s ease;
+                p{
+                    font-family: $titre;
+                    font-weight: bold;
+                    margin: 0;
+                }
+                &:hover, &:focus{
+                    background: $vert;
+                    color: $blanc;
+                }
+            }
+        }
+    }
+}

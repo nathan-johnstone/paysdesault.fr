@@ -1,5 +1,5 @@
-@use 'variables' as var;
-@use 'typo';
+@use 'variables' as *;
+@use 'typo' as *;
 
 nav[aria-label="breadcrumb"] ul{
     display: flex;
@@ -10,15 +10,15 @@ nav[aria-label="breadcrumb"] ul{
     padding: 0;
     li{
         a{
-            color: var.$vert;
+            color: $vert;
             text-decoration: none;
             transition: all 0.2s ease;
             &:hover{
-                color: var.$vertFonce
+                color: $vertFonce
             }
         }
         a[aria-current="page"]{
-                color: var.$noir;
+                color: $noir;
             }
         &:not(:last-child):after{
             @extend .ms-20;
