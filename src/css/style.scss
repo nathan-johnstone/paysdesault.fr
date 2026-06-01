@@ -192,3 +192,22 @@ main{
         justify-self: right;
     }
 }
+
+#carteVillages{
+    corner-shape: squircle;
+    border-radius: 30px;
+    box-shadow: $ombre;
+    height: 500px;
+    .villagePopup{
+        .leaflet-popup-content-wrapper{
+            text-align: center;
+            corner-shape: squircle;
+            border-radius: 30px;
+            padding: 10px;
+        }
+        .leaflet-popup-content{
+            margin: 0;
+            line-height: 1;
+        }
+    }
+}

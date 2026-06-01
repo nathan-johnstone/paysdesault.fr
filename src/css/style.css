@@ -375,4 +375,21 @@ main .btnPrincipal {
 }
 .eventCard .btnSecondaire {
   justify-self: right;
+}
+
+#carteVillages {
+  corner-shape: squircle;
+  border-radius: 30px;
+  box-shadow: 0 0 10px rgba(55, 77, 53, 0.2);
+  height: 500px;
+}
+#carteVillages .villagePopup .leaflet-popup-content-wrapper {
+  text-align: center;
+  corner-shape: squircle;
+  border-radius: 30px;
+  padding: 10px;
+}
+#carteVillages .villagePopup .leaflet-popup-content {
+  margin: 0;
+  line-height: 1;
 }/*# sourceMappingURL=style.css.map */
