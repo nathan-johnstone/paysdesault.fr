@@ -1,4 +1,24 @@
-const villages = [{nom: 'Espezel', lat: '42.8212', lon: '2.0249'}, {nom: 'Belcaire', lat: '42.8156', lon: '1.9583'}];
+const villageMarkers =  async () => {
+    try {
+        const rawData = await fetch('../src/assets/listeVillages.json');
+        if (!rawData.ok || rawData.status !== 200) {
+            console.error(rawData.statusText);
+            return;
+        }
+        const data = await rawData.json();
+        console.log(data);
+        console.log(data.villages);
+        data.villages.forEach(village => {
+            console.log(village.nom);
+            if(village.latitude != null || village.longitude != null){
+                const marker = L.marker([village.latitude, village.longitude]).addTo(map);
+                    marker.bindPopup('<a>' + village.nom + '</a>',{ closeButton: false , className: 'villagePopup' });
+            };
+        });
+    } catch (error) {
+        console.error(error);
+    }
+}
 
 const map = L.map('carteVillages').setView([42.80182, 2.06732], 11);
 
@@ -7,7 +27,62 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
 
-villages.forEach(village => {
-    const marker = L.marker([village.lat, village.lon]).addTo(map);
-    marker.bindPopup('<a>' + village.nom + '</a>',{ closeButton: false , className: 'villagePopup' });
-});
+villageMarkers();
+
+const polygon = L.polygon([
+    [42.82097369484743, 1.8594892718709217],
+    [42.852595224041664, 1.8760406089426098],
+    [42.85573215241841, 1.9460189414015194],
+    [42.87107303628824, 1.9866483342986405],
+    [42.88202053273458, 2.013233395155201],
+    [42.87028470088277, 2.031856143670825],
+    [42.881962454308514, 2.057310359602668],
+    [42.87427532605859, 2.0901678214574093],
+    [42.874340889759466, 2.0900790799877864],
+    [42.88016426317431, 2.1012153291193405],
+    [42.873790114831365, 2.1338606061884358],
+    [42.850306407131036, 2.1529951538017604],
+    [42.8437696098502, 2.1879154869761037],
+    [42.82058542114083, 2.216804595681179],
+    [42.810892, 2.228851],
+    [42.810892, 2.228851],
+    [42.811207, 2.221556],
+    [42.807744, 2.218122],
+    [42.800754, 2.221212],
+    [42.789543, 2.214003],
+    [42.784913, 2.223058],
+    [42.776251, 2.21735],
+    [42.776251, 2.21735],
+    [42.767803079934836, 2.251938707791616],
+    [42.77143541083966, 2.2874343196079456],
+    [42.70952261722278, 2.2646652445264426],
+    [42.659358788915455, 2.1923701217230165],
+    [42.6488233435722, 2.1762739765596146],
+    [42.664029380018725, 2.1659661201623988],
+    [42.68220439976074, 2.176152864631347],
+    [42.70216001785804, 2.159615470920898],
+    [42.70130737980562, 2.1470104100991527],
+    [42.71207003422622, 2.1405828969425778],
+    [42.739279231308814, 2.087619786499063],
+    [42.751461335355266, 2.0851665428732766],
+    [42.75636330065234, 2.0567386296637067],
+    [42.738899569642946, 2.0246312084894873],
+    [42.735982511431935, 1.9982543848736205],
+    [42.7368269236321, 1.9506072353170036],
+    [42.75513422350015, 1.9296972096060188],
+    [42.7693020251904, 1.9091784726221597],
+    [42.76596884932841, 1.886925683315374],
+    [42.75327804348501, 1.8663884779928706],
+    [42.80339805975443, 1.8188866595113218]
+]).addTo(map);
+
+var popup = L.popup();
+
+function onMapClick(e) {
+    popup
+        .setLatLng(e.latlng)
+        .setContent("You clicked the map at " + e.latlng.toString())
+        .openOn(map);
+}
+
+map.on('click', onMapClick);
