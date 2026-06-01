@@ -1,11 +1,6 @@
-/* COULEURS */
-
-$vertClair: #74E66E;
-$vert: #4D9945;
-$vertFonce: #374D35;
-$blanc: #F2FCF2;
-$noir: #001A00;
-$ombre: 0 0 10px #374D3533;
+@use 'variables' as var;
+@use 'typo';
+@use 'ariane';
 
 /* REBOOT CSS */
 
@@ -16,7 +11,7 @@ $ombre: 0 0 10px #374D3533;
 }
 
 body{
-    background: $blanc;
+    background: var.$blanc;
     padding: 0 10px;
     margin: 0 auto;
     max-width: 100vh;
@@ -24,89 +19,7 @@ body{
 
 :focus{
     outline-offset: 2px;
-    outline: 2px solid $noir;
-}
-
-/* POLICES ET ICONS */
-
-$titre: 'Dosis', sans-serif;
-$texte: 'Heebo', sans-serif;
-
-@font-face{
-    font-family: 'Dosis';
-    src: url(../assets/fonts/Dosis-VariableFont_wght.ttf) format("truetype");
-}
-
-@font-face{
-    font-family: 'Heebo';
-    src: url(../assets/fonts/Heebo-VariableFont_wght.ttf) format("truetype");
-}
-
-html{
-    font-family: $texte;
-    font-size: 16px;
-    line-height: 1.5;
-    color: $noir;
-}
-
-h1, h2, h3, h4, h5, h6{
-    font-family: $titre;
-    margin: 10px 0;
-}
-
-p{
-    margin: 10px 0;
-}
-
-p a{
-    text-decoration: none;
-    color:$vert;
-    transition: all 0.2s ease;
-    &:hover, &:focus{
-        color:$vertClair;
-    }
-}
-
-@font-face {
-    font-family: 'Material Symbols';
-    font-style: normal;
-    src: url(../assets/fonts/MaterialSymbolsRounded-VariableFont_FILL\,GRAD\,opsz\,wght.ttf) format('truetype');
-}
-
-.ms {
-    font-family: 'Material Symbols';
-    font-weight: normal;
-    font-style: normal;
-    display: inline-block;
-    line-height: 1;
-    text-transform: none;
-    letter-spacing: normal;
-    word-wrap: normal;
-    white-space: nowrap;
-    direction: ltr;
-    &-20{
-        @extend .ms;
-        font-size: 20px;
-    }
-    &-24{
-        @extend .ms;
-        font-size: 24px;
-    }
-    &-40{
-        @extend .ms;
-        font-size: 40px;
-    }
-    &-48{
-        @extend .ms;
-        font-size: 48px;
-    }
-    &-fill{
-            font-variation-settings: 'FILL' 1;
-    }
-}
-
-:hover > .ms-fill-hover, :focus > .ms-fill-hover{
-    font-variation-settings: 'FILL' 1;
+    outline: 2px solid var.$noir;
 }
 
 /* IMAGES */
@@ -120,7 +33,7 @@ img{
         corner-shape: squircle;
         border-radius: 30px;
         margin: 10px auto;
-        box-shadow: $ombre;
+        box-shadow: var.$ombre;
     }
 }
 
@@ -142,36 +55,36 @@ picture{
     text-decoration: none;
     height: fit-content;
     width: fit-content;
-    font-family: $titre;
+    font-family: typo.$titre;
     font-weight: bold;
     border-radius: 30px;
     corner-shape: superellipse(1.6);
     transition: all 0.2s ease;
-    color: $vert;
+    color: var.$vert;
     &:hover, &:focus{
-        color: $vertFonce;
+        color: var.$vertFonce;
     }
 }
 
 .btnPrincipal{
     @extend .btn;
-    background: $vertFonce;
-    color: $blanc;
-    border: solid 2px $vertFonce;
+    background: var.$vertFonce;
+    color: var.$blanc;
+    border: solid 2px var.$vertFonce;
     &:hover, &:focus{
-        background: $blanc;
-        color: $vertFonce;
+        background: var.$blanc;
+        color: var.$vertFonce;
     }
 }
 
 .btnSecondaire{
     @extend .btn;
-    background: $blanc;
-    color:$vertFonce;
-    border: solid 2px $vertFonce;
+    background: var.$blanc;
+    color: var.$vertFonce;
+    border: solid 2px var.$vertFonce;
     &:hover, &:focus{
-        background: $vertFonce;
-        color: $blanc;
+        background: var.$vertFonce;
+        color: var.$blanc;
     }
 }
 
@@ -183,8 +96,8 @@ picture{
     text-decoration: none;
     line-height: 1;
     border-radius: 999px;
-    background: $vert;
-    color: $blanc;
+    background: var.$vert;
+    color: var.$blanc;
     font-size: 0.8em;
     transition: all 0.2s ease;
     &:hover, &:focus{
@@ -215,52 +128,23 @@ header{
                 corner-shape: squircle;
                 border-radius: 30px;
                 padding: 10px;
-                background: $blanc;
+                background: var.$blanc;
                 text-decoration: none;
                 text-align: center;
-                color: $vert;
+                color: var.$vert;
                 line-height: 1;
-                box-shadow: $ombre;
+                box-shadow: var.$ombre;
                 transition: all 0.2s ease;
                 p{
-                    font-family: $titre;
+                    font-family: typo.$titre;
                     font-weight: bold;
                     margin: 0;
                 }
                 &:hover, &:focus{
-                    background: $vert;
-                    color: $blanc;
+                    background: var.$vert;
+                    color: var.$blanc;
                 }
             }
-        }
-    }
-}
-
-/* FIL D'ARIANE */
-
-nav[aria-label="breadcrumb"] ul{
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    li{
-        a{
-            color: $vert;
-            text-decoration: none;
-            transition: all 0.2s ease;
-            &:hover{
-                color: $vertFonce
-            }
-        }
-        a[aria-current="page"]{
-                color: $noir;
-            }
-        &:not(:last-child):after{
-            @extend .ms-20;
-            vertical-align: sub;
-            content: 'chevron_right'
         }
     }
 }
@@ -305,7 +189,7 @@ main{
     padding: 10px;
     corner-shape: squircle;
     border-radius: 30px;
-    box-shadow: $ombre;
+    box-shadow: var.$ombre;
     gap: 10px;
     picture, .tags, > a{
         grid-column: 1 / -1;
@@ -323,17 +207,17 @@ main{
     .date{
         display: flex;
         flex-flow: column;
-        background: $vertFonce;
+        background: var.$vertFonce;
         padding: 2px;
         border-radius: 10px;
         height: 50px;
         aspect-ratio: 1/1;
         overflow: hidden;
         p{
-            font-family: $titre;
+            font-family: typo.$titre;
             line-height: 1;
             margin: auto;
-            color: $blanc;
+            color: var.$blanc;
             &:first-child{
                 font-size: 1.5em;
                 font-weight: bold;
@@ -358,11 +242,11 @@ footer{
     padding: 20px;
     display: flex;
     flex-flow: row wrap;
-    background: $vertFonce;
+    background: var.$vertFonce;
     align-items: center;
     corner-shape: squircle;
     border-radius: 30px;
-    box-shadow: $ombre;
+    box-shadow: var.$ombre;
     menu{
         flex: 1 50%;
         list-style: none;
@@ -370,11 +254,11 @@ footer{
         padding: 20px;
         a{
             text-decoration: none;
-            color:$blanc;
+            color: var.$blanc;
             line-height: 2;
             transition: all 0.2s ease;
             &:hover, &:focus{
-                color:$vertClair;
+                color: var.$vertClair;
             }
         }
     }
@@ -394,7 +278,7 @@ footer{
     p{
         flex: 1 100%;
         text-align: center;
-        color:$blanc;
+        color: var.$blanc;
         font-size: 0.8em;
     }
 }

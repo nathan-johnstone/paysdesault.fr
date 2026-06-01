@@ -1,0 +1,81 @@
+@use 'variables' as var;
+
+$titre: 'Dosis', sans-serif;
+$texte: 'Heebo', sans-serif;
+
+@font-face{
+    font-family: 'Dosis';
+    src: url(../assets/fonts/Dosis-VariableFont_wght.ttf) format("truetype");
+}
+
+@font-face{
+    font-family: 'Heebo';
+    src: url(../assets/fonts/Heebo-VariableFont_wght.ttf) format("truetype");
+}
+
+html{
+    font-family: $texte;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var.$noir;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: $titre;
+    margin: 10px 0;
+}
+
+p{
+    margin: 10px 0;
+}
+
+p a{
+    text-decoration: none;
+    color: var.$vert;
+    transition: all 0.2s ease;
+    &:hover, &:focus{
+        color: var.$vertClair;
+    }
+}
+
+@font-face {
+    font-family: 'Material Symbols';
+    font-style: normal;
+    src: url(../assets/fonts/MaterialSymbolsRounded-VariableFont_FILL\,GRAD\,opsz\,wght.ttf) format('truetype');
+}
+
+.ms {
+    font-family: 'Material Symbols';
+    font-weight: normal;
+    font-style: normal;
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    &-20{
+        @extend .ms;
+        font-size: 20px;
+    }
+    &-24{
+        @extend .ms;
+        font-size: 24px;
+    }
+    &-40{
+        @extend .ms;
+        font-size: 40px;
+    }
+    &-48{
+        @extend .ms;
+        font-size: 48px;
+    }
+    &-fill{
+            font-variation-settings: 'FILL' 1;
+    }
+}
+
+:hover > .ms-fill-hover, :focus > .ms-fill-hover{
+    font-variation-settings: 'FILL' 1;
+}
