@@ -6,7 +6,7 @@
       "latitude": "42.804233",
       "longitude": "2.213037",
       "slug": "artigues",
-      "cover": "/"
+      "cover": null
     },
     {
       "nom": "Aunat",
@@ -14,7 +14,7 @@
       "latitude": "42.792377",
       "longitude": "2.0962",
       "slug": "aunat",
-      "cover": ""
+      "cover": null
     },
     {
       "nom": "Belcaire",
@@ -22,7 +22,7 @@
       "latitude": "42.8153",
       "longitude": "1.957583",
       "slug": "belcaire",
-      "cover": ""
+      "cover": null
     },
     {
       "nom": "Belfort-sur-Rebenty",
@@ -30,7 +30,7 @@
       "latitude": "42.825813",
       "longitude": "2.045968",
       "slug": "belfort-sur-rebenty",
-      "cover": ""
+      "cover": null
     },
     {
       "nom": "Belvis",
@@ -38,7 +38,7 @@
       "latitude": "42.849619",
       "longitude": "2.076609",
       "slug": "belvis",
-      "cover": ""
+      "cover": null
     },
     {
       "nom": "Bessède-de-Sault",
@@ -46,7 +46,7 @@
       "latitude": "42.78859",
       "longitude": "2.125865",
       "slug": "bessede-de-sault",
-      "cover": ""
+      "cover": null
     },
     {
       "nom": "Buillac",
@@ -54,7 +54,7 @@
       "latitude": "42.745003",
       "longitude": "2.193167",
       "slug": "buillac",
-      "cover": ""
+      "cover": null
     },
     {
       "nom": "Cailla",
@@ -62,7 +62,7 @@
       "latitude": "42.81537",
       "longitude": "2.197545",
       "slug": "cailla",
-      "cover": ""
+      "cover": null
     },
     {
       "nom": "Caillens",
@@ -70,7 +70,7 @@
       "latitude": "42.816",
       "longitude": "2.061718",
       "slug": "caillens",
-      "cover": ""
+      "cover": null
     },
     {
       "nom": "Campagna-de-Sault",
@@ -78,7 +78,7 @@
       "latitude": "42.759278",
       "longitude": "2.053649",
       "slug": "campagna-de-sault",
-      "cover": ""
+      "cover": null
     },
     {
       "nom": "Camurac",
@@ -86,7 +86,7 @@
       "latitude": "42.798298",
       "longitude": "1.915483",
       "slug": "camurac",
-      "cover": "src/img/camurac.jpg"
+      "cover": "src/assets/img/camurac.jpg"
     },
     {
       "nom": "Comus",
@@ -94,7 +94,7 @@
       "latitude": "42.813489",
       "longitude": "1.891065",
       "slug": "comus",
-      "cover": ""
+      "cover": null
     },
     {
       "nom": "Counozouls",
@@ -102,7 +102,7 @@
       "latitude": "42.732017",
       "longitude": "2.228454",
       "slug": "counozouls",
-      "cover": ""
+      "cover": null
     },
     {
       "nom": "Coudons",
@@ -110,7 +110,7 @@
       "latitude": "42.8631",
       "longitude": "2.126133",
       "slug": "coudons",
-      "cover": ""
+      "cover": null
     },
     {
       "nom": "Escouloubre",
@@ -118,7 +118,7 @@
       "latitude": "42.738928",
       "longitude": "2.126069",
       "slug": "escouloubre",
-      "cover": ""
+      "cover": null
     },
     {
       "nom": "Escouloubre-les-Bains",
@@ -126,7 +126,7 @@
       "latitude": "42.721338",
       "longitude": "2.121338",
       "slug": "escouloubre-les-bains",
-      "cover": ""
+      "cover": null
     },
     {
       "nom": "Espezel",
@@ -134,7 +134,7 @@
       "latitude": "42.820832",
       "longitude": "2.020926",
       "slug": "espezel",
-      "cover": ""
+      "cover": null
     },
     {
       "nom": "Fontanès-de-Sault",
@@ -142,7 +142,7 @@
       "latitude": "42.768549",
       "longitude": "2.082006",
       "slug": "fontanes-de-sault",
-      "cover": ""
+      "cover": null
     },
     {
       "nom": "Galinagues",
@@ -150,7 +150,7 @@
       "latitude": "42.80857",
       "longitude": "2.044981",
       "slug": "galinagues",
-      "cover": ""
+      "cover": null
     },
     {
       "nom": "Gesse",
@@ -158,7 +158,7 @@
       "latitude": "42.77596",
       "longitude": "2.153867",
       "slug": "gesse",
-      "cover": ""
+      "cover": null
     },
     {
       "nom": "Joucou",
@@ -166,7 +166,7 @@
       "latitude": "42.826742",
       "longitude": "2.087724",
       "slug": "joucou",
-      "cover": ""
+      "cover": null
     },
     {
       "nom": "La Fajolle",
@@ -174,7 +174,7 @@
       "latitude": "42.770928",
       "longitude": "1.964064",
       "slug": "la-fajolle",
-      "cover": ""
+      "cover": null
     },
     {
       "nom": "La Peyre",
@@ -182,7 +182,7 @@
       "latitude": "42.84409",
       "longitude": "2.099204",
       "slug": "la-peyre",
-      "cover": ""
+      "cover": null
     },
     {
       "nom": "Le Bousquet",
@@ -190,7 +190,7 @@
       "latitude": "42.743262",
       "longitude": "2.162933",
       "slug": "le-bousquet",
-      "cover": ""
+      "cover": null
     },
     {
       "nom": "Le Clat",
@@ -198,7 +198,7 @@
       "latitude": "42.785512",
       "longitude": "2.167912",
       "slug": "le-clat",
-      "cover": ""
+      "cover": null
     },
     {
       "nom": "Marsa",
@@ -206,7 +206,7 @@
       "latitude": "42.822524",
       "longitude": "2.1545",
       "slug": "marsa",
-      "cover": ""
+      "cover": null
     },
     {
       "nom": "Mazuby",
@@ -214,7 +214,7 @@
       "latitude": "42.801714",
       "longitude": "2.032675",
       "slug": "mazuby",
-      "cover": ""
+      "cover": null
     },
     {
       "nom": "Mérial",
@@ -222,7 +222,7 @@
       "latitude": "42.787339",
       "longitude": "1.978762",
       "slug": "merial",
-      "cover": ""
+      "cover": null
     },
     {
       "nom": "Montaillou",
@@ -230,7 +230,7 @@
       "latitude": "42.787732",
       "longitude": "1.898189",
       "slug": "montaillou",
-      "cover": ""
+      "cover": null
     },
     {
       "nom": "Munès",
@@ -238,7 +238,7 @@
       "latitude": "42.805201",
       "longitude": "2.076244",
       "slug": "munes",
-      "cover": ""
+      "cover": null
     },
     {
       "nom": "Niort-de-Sault",
@@ -246,7 +246,7 @@
       "latitude": "42.802454",
       "longitude": "2.004061",
       "slug": "niort-de-sault",
-      "cover": ""
+      "cover": null
     },
     {
       "nom": "Prades",
@@ -254,7 +254,7 @@
       "latitude": "42.786126",
       "longitude": "1.87834",
       "slug": "prades",
-      "cover": ""
+      "cover": null
     },
     {
       "nom": "Quirbajou",
@@ -262,7 +262,7 @@
       "latitude": "42.828992",
       "longitude": "2.17937",
       "slug": "quirbajou",
-      "cover": ""
+      "cover": null
     },
     {
       "nom": "Rodome",
@@ -270,7 +270,7 @@
       "latitude": "42.798227",
       "longitude": "2.071384",
       "slug": "rodome",
-      "cover": ""
+      "cover": null
     },
     {
       "nom": "Roquefort-de-Sault",
@@ -278,7 +278,7 @@
       "latitude": "42.739208",
       "longitude": "2.200243",
       "slug": "roquefort-de-sault",
-      "cover": ""
+      "cover": null
     },
     {
       "nom": "Roquefeuil",
@@ -286,7 +286,7 @@
       "latitude": "42.820289",
       "longitude": "1.994534",
       "slug": "roquefeuil",
-      "cover": ""
+      "cover": null
     },
     {
       "nom": "Sainte-Colombe-sur-Guette",
@@ -294,7 +294,7 @@
       "latitude": "42.748974",
       "longitude": "2.234323",
       "slug": "sainte-colombe-sur-guette",
-      "cover": ""
+      "cover": null
     }
   ]
 }
