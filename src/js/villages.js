@@ -11,7 +11,7 @@ async function villagesAPI(){
         data.villages.forEach(village => {
             if(village.nom != null || village.latitude != null || village.longitude != null){
                 const marker = L.marker([village.latitude, village.longitude]).addTo(map);
-                    marker.bindPopup('<a>' + village.nom + '</a>',{ closeButton: false , className: 'villagePopup' });
+                    marker.bindPopup('<a href="#">' + village.nom + '</a>',{ closeButton: false , className: 'villagePopup' });
             };
         });
 
@@ -40,7 +40,7 @@ async function villagesAPI(){
 
 villagesAPI()
 
-const map = L.map('carteVillages').setView([42.80182, 2.06732], 11);
+const map = L.map('carteVillages').setView([42.77436, 2.04929], 11);
 
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
