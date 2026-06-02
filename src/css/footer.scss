@@ -43,6 +43,12 @@ footer{
         text-align: center;
         color: $blanc;
         font-size: 0.8em;
+        a{
+            color: $vertClair;
+            &:hover{
+                color: $blanc;
+            }
+        }
     }
 }
 

@@ -179,6 +179,12 @@ footer p {
   color: #F2FCF2;
   font-size: 0.8em;
 }
+footer p a {
+  color: #74E66E;
+}
+footer p a:hover {
+  color: #F2FCF2;
+}
 
 @media screen and (max-width: 100vh) {
   footer {
