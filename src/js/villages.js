@@ -15,24 +15,6 @@ async function villagesAPI(){
             };
         });
 
-        // // Village liste
-        // const villageList = document.querySelector('#villageListe');
-        // data.villages.forEach(village => {
-        //     if(village.nom != null || village.secteur != null || village.slug != null){
-        //         const villageCard = document.createElement('div');
-
-        //         if(village.cover != null){
-        //             villageCard.style.background = 'url(/' + village.cover + ')';
-        //             console.log(village.cover);
-        //         }else{
-        //             villageCard.style.background = 'grey';
-        //             console.log('cover NO');
-        //         }
-        //         villageCard.innerText = village.nom;
-        //         villageList.append(villageCard);
-        //     };
-        // });
-
     } catch (error) {
         console.error(error);
     };
