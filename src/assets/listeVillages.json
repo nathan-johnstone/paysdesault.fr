@@ -4,223 +4,297 @@
       "nom": "Artigues",
       "secteur": "Petit plateau",
       "latitude": "42.804233",
-      "longitude": "2.213037"
+      "longitude": "2.213037",
+      "slug": "artigues",
+      "cover": "/"
     },
     {
       "nom": "Aunat",
       "secteur": "Petit plateau",
       "latitude": "42.792377",
-      "longitude": "2.0962"
+      "longitude": "2.0962",
+      "slug": "aunat",
+      "cover": ""
     },
     {
       "nom": "Belcaire",
       "secteur": "Grand plateau",
       "latitude": "42.8153",
-      "longitude": "1.957583"
+      "longitude": "1.957583",
+      "slug": "belcaire",
+      "cover": ""
     },
     {
       "nom": "Belfort-sur-Rebenty",
       "secteur": "Vallée du Rébenty",
       "latitude": "42.825813",
-      "longitude": "2.045968"
+      "longitude": "2.045968",
+      "slug": "belfort-sur-rebenty",
+      "cover": ""
     },
     {
       "nom": "Belvis",
       "secteur": "Grand plateau",
       "latitude": "42.849619",
-      "longitude": "2.076609"
+      "longitude": "2.076609",
+      "slug": "belvis",
+      "cover": ""
     },
     {
       "nom": "Bessède-de-Sault",
       "secteur": "Petit plateau",
       "latitude": "42.78859",
-      "longitude": "2.125865"
+      "longitude": "2.125865",
+      "slug": "bessede-de-sault",
+      "cover": ""
     },
     {
       "nom": "Buillac",
       "secteur": "Plateau méridional",
       "latitude": "42.745003",
-      "longitude": "2.193167"
+      "longitude": "2.193167",
+      "slug": "buillac",
+      "cover": ""
     },
     {
       "nom": "Cailla",
       "secteur": "Petit plateau",
       "latitude": "42.81537",
-      "longitude": "2.197545"
+      "longitude": "2.197545",
+      "slug": "cailla",
+      "cover": ""
     },
     {
       "nom": "Caillens",
       "secteur": "Petit plateau",
       "latitude": "42.816",
-      "longitude": "2.061718"
+      "longitude": "2.061718",
+      "slug": "caillens",
+      "cover": ""
     },
     {
       "nom": "Campagna-de-Sault",
       "secteur": "Petit plateau",
       "latitude": "42.759278",
-      "longitude": "2.053649"
+      "longitude": "2.053649",
+      "slug": "campagna-de-sault",
+      "cover": ""
     },
     {
       "nom": "Camurac",
       "secteur": "Grand plateau",
       "latitude": "42.798298",
-      "longitude": "1.915483"
+      "longitude": "1.915483",
+      "slug": "camurac",
+      "cover": "src/img/camurac.jpg"
     },
     {
       "nom": "Comus",
       "secteur": "Grand plateau",
       "latitude": "42.813489",
-      "longitude": "1.891065"
+      "longitude": "1.891065",
+      "slug": "comus",
+      "cover": ""
     },
     {
       "nom": "Counozouls",
       "secteur": "Plateau méridional",
       "latitude": "42.732017",
-      "longitude": "2.228454"
+      "longitude": "2.228454",
+      "slug": "counozouls",
+      "cover": ""
     },
     {
       "nom": "Coudons",
       "secteur": "Grand plateau",
       "latitude": "42.8631",
-      "longitude": "2.126133"
+      "longitude": "2.126133",
+      "slug": "coudons",
+      "cover": ""
     },
     {
       "nom": "Escouloubre",
       "secteur": "Plateau méridional",
       "latitude": "42.738928",
-      "longitude": "2.126069"
+      "longitude": "2.126069",
+      "slug": "escouloubre",
+      "cover": ""
     },
     {
       "nom": "Escouloubre-les-Bains",
       "secteur": "Vallée de l'Aude",
       "latitude": "42.721338",
-      "longitude": "2.121338"
+      "longitude": "2.121338",
+      "slug": "escouloubre-les-bains",
+      "cover": ""
     },
     {
       "nom": "Espezel",
       "secteur": "Grand plateau",
       "latitude": "42.820832",
-      "longitude": "2.020926"
+      "longitude": "2.020926",
+      "slug": "espezel",
+      "cover": ""
     },
     {
       "nom": "Fontanès-de-Sault",
       "secteur": "Petit plateau",
       "latitude": "42.768549",
-      "longitude": "2.082006"
+      "longitude": "2.082006",
+      "slug": "fontanes-de-sault",
+      "cover": ""
     },
     {
       "nom": "Galinagues",
       "secteur": "Petit plateau",
       "latitude": "42.80857",
-      "longitude": "2.044981"
+      "longitude": "2.044981",
+      "slug": "galinagues",
+      "cover": ""
     },
     {
       "nom": "Gesse",
       "secteur": "Vallée de l'Aude",
       "latitude": "42.77596",
-      "longitude": "2.153867"
+      "longitude": "2.153867",
+      "slug": "gesse",
+      "cover": ""
     },
     {
       "nom": "Joucou",
       "secteur": "Vallée du Rébenty",
       "latitude": "42.826742",
-      "longitude": "2.087724"
+      "longitude": "2.087724",
+      "slug": "joucou",
+      "cover": ""
     },
     {
       "nom": "La Fajolle",
       "secteur": "Vallée du Rébenty",
       "latitude": "42.770928",
-      "longitude": "1.964064"
+      "longitude": "1.964064",
+      "slug": "la-fajolle",
+      "cover": ""
     },
     {
       "nom": "La Peyre",
       "secteur": "Grand plateau",
       "latitude": "42.84409",
-      "longitude": "2.099204"
+      "longitude": "2.099204",
+      "slug": "la-peyre",
+      "cover": ""
     },
     {
       "nom": "Le Bousquet",
       "secteur": "Plateau méridional",
       "latitude": "42.743262",
-      "longitude": "2.162933"
+      "longitude": "2.162933",
+      "slug": "le-bousquet",
+      "cover": ""
     },
     {
       "nom": "Le Clat",
       "secteur": "Petit plateau",
       "latitude": "42.785512",
-      "longitude": "2.167912"
+      "longitude": "2.167912",
+      "slug": "le-clat",
+      "cover": ""
     },
     {
       "nom": "Marsa",
       "secteur": "Vallée du Rébenty",
       "latitude": "42.822524",
-      "longitude": "2.1545"
+      "longitude": "2.1545",
+      "slug": "marsa",
+      "cover": ""
     },
     {
       "nom": "Mazuby",
       "secteur": "Petit plateau",
       "latitude": "42.801714",
-      "longitude": "2.032675"
+      "longitude": "2.032675",
+      "slug": "mazuby",
+      "cover": ""
     },
     {
       "nom": "Mérial",
       "secteur": "Vallée du Rébenty",
       "latitude": "42.787339",
-      "longitude": "1.978762"
+      "longitude": "1.978762",
+      "slug": "merial",
+      "cover": ""
     },
     {
       "nom": "Montaillou",
       "secteur": "Grand plateau",
       "latitude": "42.787732",
-      "longitude": "1.898189"
+      "longitude": "1.898189",
+      "slug": "montaillou",
+      "cover": ""
     },
     {
       "nom": "Munès",
       "secteur": "Petit plateau",
       "latitude": "42.805201",
-      "longitude": "2.076244"
+      "longitude": "2.076244",
+      "slug": "munes",
+      "cover": ""
     },
     {
       "nom": "Niort-de-Sault",
       "secteur": "Vallée du Rébenty",
       "latitude": "42.802454",
-      "longitude": "2.004061"
+      "longitude": "2.004061",
+      "slug": "niort-de-sault",
+      "cover": ""
     },
     {
       "nom": "Prades",
       "secteur": "Grand plateau",
       "latitude": "42.786126",
-      "longitude": "1.87834"
+      "longitude": "1.87834",
+      "slug": "prades",
+      "cover": ""
     },
     {
       "nom": "Quirbajou",
       "secteur": "Grand plateau",
       "latitude": "42.828992",
-      "longitude": "2.17937"
+      "longitude": "2.17937",
+      "slug": "quirbajou",
+      "cover": ""
     },
     {
       "nom": "Rodome",
       "secteur": "Petit plateau",
       "latitude": "42.798227",
-      "longitude": "2.071384"
+      "longitude": "2.071384",
+      "slug": "rodome",
+      "cover": ""
     },
     {
       "nom": "Roquefort-de-Sault",
       "secteur": "Plateau méridional",
       "latitude": "42.739208",
-      "longitude": "2.200243"
+      "longitude": "2.200243",
+      "slug": "roquefort-de-sault",
+      "cover": ""
     },
     {
       "nom": "Roquefeuil",
       "secteur": "Grand plateau",
       "latitude": "42.820289",
-      "longitude": "1.994534"
+      "longitude": "1.994534",
+      "slug": "roquefeuil",
+      "cover": ""
     },
     {
       "nom": "Sainte-Colombe-sur-Guette",
       "secteur": "Plateau méridional",
       "latitude": "42.748974",
-      "longitude": "2.234323"
+      "longitude": "2.234323",
+      "slug": "sainte-colombe-sur-guette",
+      "cover": ""
     }
   ]
 }
