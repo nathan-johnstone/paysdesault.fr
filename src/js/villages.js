@@ -17,8 +17,8 @@ const villageMarkers =  async () => {
         });
     } catch (error) {
         console.error(error);
-    }
-}
+    };
+};
 
 const map = L.map('carteVillages').setView([42.80182, 2.06732], 11);
 
@@ -83,6 +83,6 @@ function onMapClick(e) {
         .setLatLng(e.latlng)
         .setContent("You clicked the map at " + e.latlng.toString())
         .openOn(map);
-}
+};
 
 map.on('click', onMapClick);

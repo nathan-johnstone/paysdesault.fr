@@ -10,7 +10,7 @@
     <link rel="icon" href="../favicon.ico">
     <script src="../src/js/main.js" defer></script>
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-    <script src="../src/js/carteVillages.js" defer></script>
+    <script src="../src/js/villages.js" defer></script>
 </head>
 <body>
     <header>
@@ -40,11 +40,26 @@
 
     <main>
 
-        <h1>Villages</h1>
+        <h1>Les villages du Pays de Sault</h1>
 
         <div id="carteVillages"></div>
 
     </main>
+
+    <section>
+        <div>
+            <label for="villageSelect">Trier les villages</label>
+            <select id="villageSelect">
+                <option value="tout" selected>Tout afficher</option>
+                <option value="GrandPlateau">Grand plateau</option>
+                <option value="tout">Vallée du Rébenty</option>
+                <option value="tout">Petit plateau</option>
+                <option value="tout">Vallée de l'Aude</option>
+                <option value="tout">Plateau méridional</option>
+            </select>
+        </div>
+
+    </section>
     
     <footer>
         <menu aria-label="navigation secondiare">
