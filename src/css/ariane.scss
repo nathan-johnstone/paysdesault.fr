@@ -17,7 +17,7 @@ nav[aria-label="breadcrumb"] ul{
                 color: $vertFonce
             }
         }
-        a[aria-current="page"]{
+        &[aria-current="page"] a{
                 color: $noir;
             }
         &:not(:last-child):after{
