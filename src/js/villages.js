@@ -9,7 +9,7 @@ async function villagesAPI(){
 
         // Village markers
         data.villages.forEach(village => {
-            if(village.nom != null || village.latitude != null || village.longitude != null){
+            if(village.nom != "" || village.latitude != "" || village.longitude != ""){
                 const marker = L.marker([village.latitude, village.longitude]).addTo(map);
                     marker.bindPopup('<a href="#">' + village.nom + '</a>',{ closeButton: false , className: 'villagePopup' });
             };
