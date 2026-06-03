@@ -19,15 +19,14 @@ async function villagesAPI(){
         console.error(error);
     };
 };
-
-villagesAPI()
-
 const map = L.map('carteVillages').setView([42.77436, 2.04929], 11);
 
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
+
+villagesAPI()
 
 const polygon = L.polygon([
     [42.802958, 1.818924],
@@ -47,3 +46,4 @@ const polygon = L.polygon([
     [42.880493, 2.011185],
     [42.850799, 1.877975]
 ]).addTo(map);
+
