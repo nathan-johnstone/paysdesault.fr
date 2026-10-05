@@ -1,0 +1,300 @@
+{
+  "villages": [
+    {
+      "nom": "Artigues",
+      "secteur": "Petit plateau",
+      "latitude": "42.804233",
+      "longitude": "2.213037",
+      "slug": "artigues",
+      "cover": null
+    },
+    {
+      "nom": "Aunat",
+      "secteur": "Petit plateau",
+      "latitude": "42.792377",
+      "longitude": "2.0962",
+      "slug": "aunat",
+      "cover": null
+    },
+    {
+      "nom": "Belcaire",
+      "secteur": "Grand plateau",
+      "latitude": "42.8153",
+      "longitude": "1.957583",
+      "slug": "belcaire",
+      "cover": null
+    },
+    {
+      "nom": "Belfort-sur-Rebenty",
+      "secteur": "Vallée du Rébenty",
+      "latitude": "42.825813",
+      "longitude": "2.045968",
+      "slug": "belfort-sur-rebenty",
+      "cover": null
+    },
+    {
+      "nom": "Belvis",
+      "secteur": "Grand plateau",
+      "latitude": "42.849619",
+      "longitude": "2.076609",
+      "slug": "belvis",
+      "cover": null
+    },
+    {
+      "nom": "Bessède-de-Sault",
+      "secteur": "Petit plateau",
+      "latitude": "42.78859",
+      "longitude": "2.125865",
+      "slug": "bessede-de-sault",
+      "cover": null
+    },
+    {
+      "nom": "Buillac",
+      "secteur": "Plateau méridional",
+      "latitude": "42.745003",
+      "longitude": "2.193167",
+      "slug": "buillac",
+      "cover": null
+    },
+    {
+      "nom": "Cailla",
+      "secteur": "Petit plateau",
+      "latitude": "42.81537",
+      "longitude": "2.197545",
+      "slug": "cailla",
+      "cover": null
+    },
+    {
+      "nom": "Caillens",
+      "secteur": "Petit plateau",
+      "latitude": "42.816",
+      "longitude": "2.061718",
+      "slug": "caillens",
+      "cover": null
+    },
+    {
+      "nom": "Campagna-de-Sault",
+      "secteur": "Petit plateau",
+      "latitude": "42.759278",
+      "longitude": "2.053649",
+      "slug": "campagna-de-sault",
+      "cover": null
+    },
+    {
+      "nom": "Camurac",
+      "secteur": "Grand plateau",
+      "latitude": "42.798298",
+      "longitude": "1.915483",
+      "slug": "camurac",
+      "cover": "src/assets/img/camurac.jpg"
+    },
+    {
+      "nom": "Comus",
+      "secteur": "Grand plateau",
+      "latitude": "42.813489",
+      "longitude": "1.891065",
+      "slug": "comus",
+      "cover": null
+    },
+    {
+      "nom": "Counozouls",
+      "secteur": "Plateau méridional",
+      "latitude": "42.732017",
+      "longitude": "2.228454",
+      "slug": "counozouls",
+      "cover": null
+    },
+    {
+      "nom": "Coudons",
+      "secteur": "Grand plateau",
+      "latitude": "42.8631",
+      "longitude": "2.126133",
+      "slug": "coudons",
+      "cover": null
+    },
+    {
+      "nom": "Escouloubre",
+      "secteur": "Plateau méridional",
+      "latitude": "42.738928",
+      "longitude": "2.126069",
+      "slug": "escouloubre",
+      "cover": null
+    },
+    {
+      "nom": "Escouloubre-les-Bains",
+      "secteur": "Vallée de l'Aude",
+      "latitude": "42.721338",
+      "longitude": "2.121338",
+      "slug": "escouloubre-les-bains",
+      "cover": null
+    },
+    {
+      "nom": "Espezel",
+      "secteur": "Grand plateau",
+      "latitude": "42.820832",
+      "longitude": "2.020926",
+      "slug": "espezel",
+      "cover": null
+    },
+    {
+      "nom": "Fontanès-de-Sault",
+      "secteur": "Petit plateau",
+      "latitude": "42.768549",
+      "longitude": "2.082006",
+      "slug": "fontanes-de-sault",
+      "cover": null
+    },
+    {
+      "nom": "Galinagues",
+      "secteur": "Petit plateau",
+      "latitude": "42.80857",
+      "longitude": "2.044981",
+      "slug": "galinagues",
+      "cover": null
+    },
+    {
+      "nom": "Gesse",
+      "secteur": "Vallée de l'Aude",
+      "latitude": "42.77596",
+      "longitude": "2.153867",
+      "slug": "gesse",
+      "cover": null
+    },
+    {
+      "nom": "Joucou",
+      "secteur": "Vallée du Rébenty",
+      "latitude": "42.826742",
+      "longitude": "2.087724",
+      "slug": "joucou",
+      "cover": null
+    },
+    {
+      "nom": "La Fajolle",
+      "secteur": "Vallée du Rébenty",
+      "latitude": "42.770928",
+      "longitude": "1.964064",
+      "slug": "la-fajolle",
+      "cover": null
+    },
+    {
+      "nom": "La Peyre",
+      "secteur": "Grand plateau",
+      "latitude": "42.84409",
+      "longitude": "2.099204",
+      "slug": "la-peyre",
+      "cover": null
+    },
+    {
+      "nom": "Le Bousquet",
+      "secteur": "Plateau méridional",
+      "latitude": "42.743262",
+      "longitude": "2.162933",
+      "slug": "le-bousquet",
+      "cover": null
+    },
+    {
+      "nom": "Le Clat",
+      "secteur": "Petit plateau",
+      "latitude": "42.785512",
+      "longitude": "2.167912",
+      "slug": "le-clat",
+      "cover": null
+    },
+    {
+      "nom": "Marsa",
+      "secteur": "Vallée du Rébenty",
+      "latitude": "42.822524",
+      "longitude": "2.1545",
+      "slug": "marsa",
+      "cover": null
+    },
+    {
+      "nom": "Mazuby",
+      "secteur": "Petit plateau",
+      "latitude": "42.801714",
+      "longitude": "2.032675",
+      "slug": "mazuby",
+      "cover": null
+    },
+    {
+      "nom": "Mérial",
+      "secteur": "Vallée du Rébenty",
+      "latitude": "42.787339",
+      "longitude": "1.978762",
+      "slug": "merial",
+      "cover": null
+    },
+    {
+      "nom": "Montaillou",
+      "secteur": "Grand plateau",
+      "latitude": "42.787732",
+      "longitude": "1.898189",
+      "slug": "montaillou",
+      "cover": null
+    },
+    {
+      "nom": "Munès",
+      "secteur": "Petit plateau",
+      "latitude": "42.805201",
+      "longitude": "2.076244",
+      "slug": "munes",
+      "cover": null
+    },
+    {
+      "nom": "Niort-de-Sault",
+      "secteur": "Vallée du Rébenty",
+      "latitude": "42.802454",
+      "longitude": "2.004061",
+      "slug": "niort-de-sault",
+      "cover": null
+    },
+    {
+      "nom": "Prades",
+      "secteur": "Grand plateau",
+      "latitude": "42.786126",
+      "longitude": "1.87834",
+      "slug": "prades",
+      "cover": null
+    },
+    {
+      "nom": "Quirbajou",
+      "secteur": "Grand plateau",
+      "latitude": "42.828992",
+      "longitude": "2.17937",
+      "slug": "quirbajou",
+      "cover": null
+    },
+    {
+      "nom": "Rodome",
+      "secteur": "Petit plateau",
+      "latitude": "42.798227",
+      "longitude": "2.071384",
+      "slug": "rodome",
+      "cover": null
+    },
+    {
+      "nom": "Roquefort-de-Sault",
+      "secteur": "Plateau méridional",
+      "latitude": "42.739208",
+      "longitude": "2.200243",
+      "slug": "roquefort-de-sault",
+      "cover": null
+    },
+    {
+      "nom": "Roquefeuil",
+      "secteur": "Grand plateau",
+      "latitude": "42.820289",
+      "longitude": "1.994534",
+      "slug": "roquefeuil",
+      "cover": null
+    },
+    {
+      "nom": "Sainte-Colombe-sur-Guette",
+      "secteur": "Plateau méridional",
+      "latitude": "42.748974",
+      "longitude": "2.234323",
+      "slug": "sainte-colombe-sur-guette",
+      "cover": null
+    }
+  ]
+}

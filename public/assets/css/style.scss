@@ -1,0 +1,213 @@
+@use 'variables' as *;
+@use 'typo' as *;
+@use 'header';
+@use 'ariane';
+@use 'footer';
+
+/* REBOOT CSS */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body{
+    background: $blanc;
+    padding: 0 10px;
+    margin: 0 auto;
+    max-width: 100vh;
+}
+
+:focus{
+    outline-offset: 2px;
+    outline: 2px solid $noir;
+}
+
+/* IMAGES */
+
+img{
+    max-width: 100%;
+    max-height: 100%;
+    &.cover{
+        width: 100%;
+        object-fit: cover;
+        corner-shape: squircle;
+        border-radius: 30px;
+        margin: 10px auto;
+        box-shadow: $ombre;
+    }
+}
+
+picture{
+    display: block;
+    img{
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+/* BOUTONS & TAGS */
+
+.btn{
+    display: inline-flex;
+    gap: 3px;
+    align-items: center;
+    padding: 5px 10px;
+    text-decoration: none;
+    height: fit-content;
+    width: fit-content;
+    font-family: $titre;
+    font-weight: bold;
+    border-radius: 30px;
+    corner-shape: superellipse(1.6);
+    transition: all 0.2s ease;
+    color: $vert;
+    &:hover, &:focus{
+        color: $vertFonce;
+    }
+}
+
+.btnPrincipal{
+    @extend .btn;
+    background: $vertFonce;
+    color: $blanc;
+    border: solid 2px $vertFonce;
+    &:hover, &:focus{
+        background: $blanc;
+        color: $vertFonce;
+    }
+}
+
+.btnSecondaire{
+    @extend .btn;
+    background: $blanc;
+    color: $vertFonce;
+    border: solid 2px $vertFonce;
+    &:hover, &:focus{
+        background: $vertFonce;
+        color: $blanc;
+    }
+}
+
+.tag{
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px 10px;
+    text-decoration: none;
+    line-height: 1;
+    border-radius: 999px;
+    background: $vert;
+    color: $blanc;
+    font-size: 0.8em;
+    transition: all 0.2s ease;
+    &:hover, &:focus{
+        opacity: 0.8;
+    }
+}
+
+/* CONTENU PRINCIPAL */
+
+main{
+    padding-bottom: 20px;
+    h1{
+        text-align: center;
+    }
+    .btnPrincipal{
+        display: flex;
+        justify-self: center;
+    }
+}
+
+/* EVENT CARDS */
+
+#prochainsEvents{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    gap: 20px;
+    h2, > a{
+        grid-column: 1 / -1;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 100vh) {
+    #prochainsEvents{
+        grid-template-columns: 1fr;
+    }
+}
+
+.eventCard{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    align-items: center;
+    background: #fff;
+    padding: 10px;
+    corner-shape: squircle;
+    border-radius: 30px;
+    box-shadow: $ombre;
+    gap: 10px;
+    picture, .tags, > a{
+        grid-column: 1 / -1;
+    }
+    .tags{
+        display: flex;
+        gap: 5px;
+        align-items: center;
+    }
+    img{
+        corner-shape: squircle;
+        border-radius: 20px;
+        aspect-ratio: 4/3;
+    }
+    .date{
+        display: flex;
+        flex-flow: column;
+        background: $vertFonce;
+        padding: 2px;
+        border-radius: 10px;
+        height: 50px;
+        aspect-ratio: 1/1;
+        overflow: hidden;
+        p{
+            font-family: $titre;
+            line-height: 1;
+            margin: auto;
+            color: $blanc;
+            &:first-child{
+                font-size: 1.5em;
+                font-weight: bold;
+            }
+            &:last-child{
+                font-size: 0.8em;
+            }
+        }
+    }
+    h3{
+        margin: 0;
+    }
+    .btnSecondaire{
+        justify-self: right;
+    }
+}
+
+#carteVillages{
+    corner-shape: squircle;
+    border-radius: 30px;
+    box-shadow: $ombre;
+    height: 500px;
+    .villagePopup{
+        .leaflet-popup-content-wrapper{
+            text-align: center;
+            corner-shape: squircle;
+            border-radius: 30px;
+            padding: 10px;
+        }
+        .leaflet-popup-content{
+            margin: 0;
+            line-height: 1;
+        }
+    }
+}

@@ -1,0 +1,11 @@
+RewriteEngine On
+
+# Ne pas réécrire les fichiers/dossiers déjà dans public
+RewriteRule ^public/ - [L]
+
+# Servir les fichiers statiques depuis public/
+RewriteCond %{DOCUMENT_ROOT}/public/$1 -f
+RewriteRule ^(.+)$ public/$1 [L]
+
+# Tout le reste → application PHP
+RewriteRule ^ public/index.php [L]
