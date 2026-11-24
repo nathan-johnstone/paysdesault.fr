@@ -39,39 +39,39 @@ class ViewAddEvent extends View
             <form action="" method="post">
                 <div>
                     <label for="title">Titre : </label>
-                    <input type="text" id="title" name="title" placeholder="Fête locale de Belcaire" required>
+                    <input type="text" id="title" name="title" placeholder="Fête locale de Belcaire" value="<?= $_POST['title'] ?? '' ?>" required>
                 </div>
                 <div>
                     <label for="village">Village : </label>
-                    <input type="text" id="village" name="village" placeholder="Belcaire" required>
+                    <input type="text" id="village" name="village" placeholder="Belcaire" value="<?= $_POST['village'] ?? '' ?>" required>
                 </div>
                 <div>
                     <label for="address">Adresse : </label>
-                    <input type="text" id="address" name="address" placeholder="Place de l'école, 112340 Belcaire" required>
+                    <input type="text" id="address" name="address" placeholder="Place de l'école, 112340 Belcaire" value="<?= $_POST['address'] ?? '' ?>" required>
                 </div>
                 <div>
                     <label for="description">Description : </label>
-                    <textarea id="description" name="description" required></textarea>
+                    <textarea id="description" name="description" required><?= $_POST['description'] ?? '' ?></textarea>
                 </div>
                 <div>
                     <label for="start_date">Date de début : </label>
-                    <input type="date" id="start_date" name="start_date" min="<?= date("Y-m-d") ?>" max="9999-12-31" required>
+                    <input type="date" id="start_date" name="start_date" min="<?= date("Y-m-d") ?>" max="9999-12-31" value="<?= $_POST['start_date'] ?? '' ?>" required>
                 </div>
                 <div>
                     <label for="end_date">Date de fin : </label>
-                    <input type="date" id="end_date" name="end_date" min="<?= date("Y-m-d") ?>" max="9999-12-31" required>
+                    <input type="date" id="end_date" name="end_date" min="<?= date("Y-m-d") ?>" max="9999-12-31" value="<?= $_POST['end_date'] ?? '' ?>" required>
                 </div>
                 <div>
                     <label for="start_time">Heure de début : </label>
-                    <input type="time" id="start_time" name="start_time" required>
+                    <input type="time" id="start_time" name="start_time" value="<?= $_POST['start_time'] ?? '' ?>" required>
                 </div>
                 <div>
                     <label for="end_time">Heure de fin : </label>
-                    <input type="time" id="end_time" name="end_time" required>
+                    <input type="time" id="end_time" name="end_time" value="<?= $_POST['end_time'] ?? '' ?>" required>
                 </div>
                 <div>
                     <label for="category">Catégory </label>
-                    <select name="category_id" required>
+                    <select name="category_id" value="<?= $_POST['category_id'] ?? '' ?>" required>
                     <?php foreach ($this->getCategories() as $category) : ?>
                         <option value="<?= $category["id"] ?>"><?= $category["name"] ?></option>
                     <?php endforeach ?>

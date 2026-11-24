@@ -20,6 +20,26 @@ class ControllerEvent extends Controller
                 return;
             }
 
+            if (strtotime($_POST['start_date']) > strtotime($_POST['end_date'])) {
+                $this->getView()->setMessage('La date de début doit être inférieure à la date de fin.');
+                return;
+            }
+
+            if (strtotime($_POST['start_date']) === strtotime($_POST['end_date']) && strtotime($_POST['start_time']) > strtotime($_POST['end_time'])) {
+                $this->getView()->setMessage('L\'heure de début doit être inférieure à l\'heure de fin.');
+                return;
+            }
+
+            if (strtotime($_POST['start_date']) === strtotime($_POST['end_date']) && strtotime($_POST['start_time']) === strtotime($_POST['end_time'])) {
+                $this->getView()->setMessage('L\'heure de début doit être différente de l\'heure de fin.');
+                return;
+            }
+
+            if (strtotime($_POST['start_date']) < strtotime(date("Y-m-d"))) {
+                $this->getView()->setMessage('La date de début doit être supérieure ou égale à la date du jour.');
+                return;
+            }
+
             $title = \Tools::sanitize($_POST['title']);
             $village = \Tools::sanitize($_POST['village']);
             $address = \Tools::sanitize($_POST['address']);
