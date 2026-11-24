@@ -35,6 +35,15 @@ class ViewAddEvent extends View
 ?>
         <main>
 
+
+            <nav aria-label="breadcrumb">
+                <ul>
+                    <li aria-label="Accueil"><a href="<?= $_ENV['accueil'] ?>">Accueil</a></li>
+                    <li aria-label="Espace Organisateur"><a href="<?= $_ENV['espaceOrganisateur'] ?>">Espace Organisateur</a></li>
+                    <li aria-current="page"><a>Ajouter un événement</a></li>
+                </ul>
+            </nav>
+
             <h1>Ajouter un evenement</h1>
             <form action="" method="post">
                 <div>
