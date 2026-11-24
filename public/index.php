@@ -63,7 +63,7 @@ switch ($path) {
         $controller->render();
         break;
     case $_ENV['addEvent']:
-        $controller = new Controller\ControllerAddEvent(new Model\ModelEvent, new View\ViewAddEvent("Ajouter un événement"));
+        $controller = new Controller\ControllerEvent(new Model\ModelEvent, new View\ViewAddEvent("Ajouter un événement"));
         $controller->newEvent();
         $controller->render();
         break;

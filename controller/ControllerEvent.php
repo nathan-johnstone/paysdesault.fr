@@ -2,7 +2,7 @@
 
 namespace Controller;
 
-class ControllerAddEvent extends Controller
+class ControllerEvent extends Controller
 {
     //ATTRIBUTS
 
