@@ -1,10 +1,10 @@
 @font-face {
   font-family: "Dosis";
-  src: url(../fonts/Dosis-VariableFont_wght.ttf) format("truetype");
+  src: url(../fonts/dosis.ttf) format("truetype");
 }
 @font-face {
   font-family: "Heebo";
-  src: url(../fonts/Heebo-VariableFont_wght.ttf) format("truetype");
+  src: url(../fonts/heebo.ttf) format("truetype");
 }
 html {
   font-family: "Heebo", sans-serif;
@@ -34,7 +34,7 @@ p a:hover, p a:focus {
 @font-face {
   font-family: "Material Symbols";
   font-style: normal;
-  src: url(../fonts/MaterialSymbolsRounded-VariableFont_FILL\,GRAD\,opsz\,wght.ttf) format("truetype");
+  src: url(../fonts/materialSymbolsRounded.ttf) format("truetype");
 }
 .ms, .ms-48, .ms-40, .ms-24, .ms-20, nav[aria-label=breadcrumb] ul li:not(:last-child):after {
   font-family: "Material Symbols";

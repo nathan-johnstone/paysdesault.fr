@@ -5,12 +5,12 @@ $texte: 'Heebo', sans-serif;
 
 @font-face{
     font-family: 'Dosis';
-    src: url(./fonts/Dosis-VariableFont_wght.ttf) format("truetype");
+    src: url(./fonts/dosis.ttf) format("truetype");
 }
 
 @font-face{
     font-family: 'Heebo';
-    src: url(./fonts/Heebo-VariableFont_wght.ttf) format("truetype");
+    src: url(./fonts/heebo.ttf) format("truetype");
 }
 
 html{
@@ -41,7 +41,7 @@ p a{
 @font-face {
     font-family: 'Material Symbols';
     font-style: normal;
-    src: url(./fonts/MaterialSymbolsRounded-VariableFont_FILL\,GRAD\,opsz\,wght.ttf) format('truetype');
+    src: url(./fonts/materialSymbolsRounded.ttf) format('truetype');
 }
 
 .ms {

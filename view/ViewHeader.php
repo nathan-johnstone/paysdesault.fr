@@ -35,6 +35,7 @@ class ViewHeader
             <title><?= $this->title ?> - Pays de Sault en Pyrénées Audoises</title>
             <link rel="apple-touch-icon" href="/assets/media/apple-touch-icon.png">
             <link rel="icon" href="/assets/media/favicon.ico">
+            <link rel="preload" href="/assets/fonts/materialSymbolsRounded.ttf" as="font" type="font/ttf" crossorigin="anonymous" />
             <?php if ($this->links) {
                 echo $this->links;
             } ?>
