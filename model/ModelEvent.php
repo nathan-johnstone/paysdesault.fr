@@ -117,9 +117,6 @@ class ModelEvent extends Model
     {
         try {
             $req = $this->getBdd()->prepare('SELECT e.id, e.title, e.village, e.start_date, c.name, c.icon, c.image FROM `event` e INNER JOIN category c ON c.id = e.category_id WHERE e.start_date >= CURRENT_DATE ORDER BY e.start_date LIMIT 4');
-
-            //manque WHRE e.start_date >= today ORDER BY e.start_date
-
             $req->execute();
             return $req->fetchAll(PDO::FETCH_ASSOC);
         } catch (EXCEPTION $error) {
