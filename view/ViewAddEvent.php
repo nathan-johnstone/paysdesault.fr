@@ -72,9 +72,9 @@ class ViewAddEvent extends View
                 <div>
                     <label for="category">Catégory </label>
                     <select name="category_id" value="<?= $_POST['category_id'] ?? '' ?>" required>
-                    <?php foreach ($this->getCategories() as $category) : ?>
-                        <option value="<?= $category["id"] ?>"><?= $category["name"] ?></option>
-                    <?php endforeach ?>
+                        <?php foreach ($this->getCategories() as $category) : ?>
+                            <option value="<?= $category["id"] ?>"><?= $category["name"] ?></option>
+                        <?php endforeach ?>
                     </select>
                 </div>
                 <input type="submit" name="ajouter" value="Ajouter mon événement">

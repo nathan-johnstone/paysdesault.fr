@@ -127,7 +127,8 @@ class ModelEvent extends Model
         }
     }
 
-    function getAllCategories(): array{
+    function getAllCategories(): array
+    {
         try {
             $req = $this->getBdd()->prepare('SELECT id, `name`, icon, `image` FROM category ORDER BY id');
             $req->execute();
