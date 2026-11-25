@@ -14,10 +14,12 @@ class ControllerEvent extends Controller
     public function newEvent(): void
     {
         if (isset($_POST['ajouter'])) {
+// Validate form inputs
             if (empty($_POST['title']) || empty($_POST['village']) || empty($_POST['address']) || empty($_POST['description']) || empty($_POST['start_date']) || empty($_POST['end_date']) || empty($_POST['start_time']) || empty($_POST['end_time']) || empty($_POST['category_id'])) {
                 $this->getView()->setMessage('Veuillez remplir tous les champs.');
                 return;
             }
+// Validate date and time inputs
             if (strtotime($_POST['start_date']) > strtotime($_POST['end_date'])) {
                 $this->getView()->setMessage('La date de début doit être inférieure à la date de fin.');
                 return;
@@ -34,7 +36,7 @@ class ControllerEvent extends Controller
                 $this->getView()->setMessage('La date de début doit être supérieure ou égale à la date du jour.');
                 return;
             }
-
+// Sanitize form inputs
             $title = \Tools::sanitize($_POST['title']);
             $village = \Tools::sanitize($_POST['village']);
             $address = \Tools::sanitize($_POST['address']);
@@ -44,7 +46,7 @@ class ControllerEvent extends Controller
             $start_time = \Tools::sanitize($_POST['start_time']);
             $end_time = \Tools::sanitize($_POST['end_time']);
             $category_id = \Tools::sanitize($_POST['category_id']);
-
+// Set the event data in the model
             $this->getModel()
                 ->setTitle($title)
                 ->setVillage($village)
@@ -56,7 +58,7 @@ class ControllerEvent extends Controller
                 ->setEndTime($end_time)
                 ->setCategoryId($category_id)
                 ->setUserId($_SESSION["id"]);
-
+// Add the event to the database
             $this->getModel()->addEvent();
 
             $this->getView()->setMessage("L'événement a bien été enregistré.");

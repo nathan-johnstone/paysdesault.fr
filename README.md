@@ -5,7 +5,6 @@
 ## 2 Créer un fichier tools/env.php avec vos informations de BDD
 ```php
 <?php
-
 //Variables d'environnement
 const BDD_NAME = "";
 const BDD_HOST = "";

@@ -16,12 +16,10 @@ class ViewHistoire extends View
         ob_start();
 ?>
         <nav aria-label="breadcrumb">
-
             <ul>
                 <li aria-label="Accueil"><a href="<?= $_ENV['accueil'] ?>">Accueil</a></li>
                 <li aria-current="page"><a>Histoire</a></li>
             </ul>
-
         </nav>
 
         <main>

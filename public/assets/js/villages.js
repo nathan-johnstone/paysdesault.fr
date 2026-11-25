@@ -1,3 +1,4 @@
+// API call to get the list of villages from the JSON file
 async function villagesAPI() {
     try {
         const rawData = await fetch('./assets/listeVillages.json');
@@ -7,7 +8,7 @@ async function villagesAPI() {
         }
         const data = await rawData.json();
 
-        // Village markers
+// Loop through the villages data and create markers for each village
         data.villages.forEach(village => {
             if (village.nom != "" || village.latitude != "" || village.longitude != "") {
                 const marker = L.marker([village.latitude, village.longitude]).addTo(map);
@@ -20,15 +21,14 @@ async function villagesAPI() {
     };
 };
 
+// Initialize the map & set the view and zoom level
 const map = L.map('carteVillages').setView([42.77436, 2.04929], 11);
-
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
 
-villagesAPI()
-
+// Draw a polygon on the map using the specified coordinates
 const polygon = L.polygon([
     [42.802958, 1.818924],
     [42.753567, 1.869049],
@@ -47,3 +47,6 @@ const polygon = L.polygon([
     [42.880493, 2.011185],
     [42.850799, 1.877975]
 ]).addTo(map);
+
+// Call the villagesAPI function to fetch and display the map and markers
+villagesAPI()

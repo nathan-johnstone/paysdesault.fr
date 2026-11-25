@@ -18,7 +18,7 @@ CREATE TABLE IF NOT EXISTS `user`(
 	CONSTRAINT fk_user_role FOREIGN KEY (role_id) REFERENCES `role`(id)
 )ENGINE=innoDB;
 
-INSERT INTO `user`(email, `name`, `password`, role_id) VALUES ('nathan@bricarosa.fr', 'Nathan', '$2y$10$cSbX3nSYSH74Dj.UsYME7uogNu/4c1WxcYM5vNfpSmOoOCO1qk5C6', 1); -- password = 1
+INSERT INTO `user`(email, `name`, `password`, role_id) VALUES ('nathan@bricarosa.fr', 'Nathan', '$2y$10$cSbX3nSYSH74Dj.UsYME7uogNu/4c1WxcYM5vNfpSmOoOCO1qk5C6', 1);
 
 CREATE TABLE IF NOT EXISTS category(
 	id INT PRIMARY KEY AUTO_INCREMENT,
