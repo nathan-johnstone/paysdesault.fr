@@ -1,4 +1,4 @@
-# mvc_php
+# paysdesault.fr
 
 ## 1 Créer la BDD et exécuter bdd.sql
 
